@@ -1,49 +1,158 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200">
-  <rect width="1200" height="1200" fill="#030712"/>
-  <rect x="50" y="50" width="1100" height="1100" rx="36" fill="#0f172a" fill-opacity="0.9" stroke="#8b5cf6" stroke-opacity="0.3" stroke-width="2"/>
-  
-  <text x="100" y="140" font-family="Inter, sans-serif" font-size="44" font-weight="800" fill="#ffffff">SYSTEM ARCHITECTURE &amp; PIPELINE</text>
-  <text x="100" y="185" font-family="JetBrains Mono, monospace" font-size="22" font-weight="600" fill="#8b5cf6">Verified Data Flow &amp; AI Processing Engine</text>
-  <line x1="100" y1="220" x2="1100" y2="220" stroke="#1e293b" stroke-width="2"/>
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#030712"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="step1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1e3a8a" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#1e40af" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="step2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4c1d95" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#5b21b6" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="step3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#164e63" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0e7490" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="step4" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#831843" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#9d174d" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="step5" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#064e3b" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#065f46" stop-opacity="0.3"/>
+    </linearGradient>
+    <filter id="shadow2">
+      <feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
 
-  <!-- Pipeline Boxes -->
-  <!-- Step 1 -->
-  <rect x="100" y="270" width="1000" height="90" rx="18" fill="#020617" stroke="#3b82f6" stroke-width="2"/>
-  <text x="140" y="325" font-family="JetBrains Mono, monospace" font-size="20" font-weight="800" fill="#60a5fa">1. INGESTION</text>
-  <text x="400" y="325" font-family="Inter, sans-serif" font-size="18" fill="#cbd5e1">PDF • DOCX • GitHub Repos • Emails • Chat Transcripts • Audio</text>
+  <!-- Background -->
+  <rect width="1200" height="1200" fill="url(#bg2)"/>
 
-  <!-- Step 2 -->
-  <rect x="100" y="390" width="1000" height="90" rx="18" fill="#020617" stroke="#8b5cf6" stroke-width="2"/>
-  <text x="140" y="445" font-family="JetBrains Mono, monospace" font-size="20" font-weight="800" fill="#c084fc">2. EXTRACTION</text>
-  <text x="400" y="445" font-family="Inter, sans-serif" font-size="18" fill="#cbd5e1">AI Entity Recognizer &amp; Multimodal Text Tokenizer</text>
+  <!-- Grid -->
+  <g stroke="#ffffff" stroke-opacity="0.03" stroke-width="1">
+    <line x1="0" y1="100" x2="1200" y2="100"/><line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/><line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/><line x1="0" y1="600" x2="1200" y2="600"/>
+    <line x1="0" y1="700" x2="1200" y2="700"/><line x1="0" y1="800" x2="1200" y2="800"/>
+    <line x1="0" y1="900" x2="1200" y2="900"/><line x1="0" y1="1000" x2="1200" y2="1000"/>
+    <line x1="0" y1="1100" x2="1200" y2="1100"/>
+    <line x1="150" y1="0" x2="150" y2="1200"/><line x1="300" y1="0" x2="300" y2="1200"/>
+    <line x1="450" y1="0" x2="450" y2="1200"/><line x1="600" y1="0" x2="600" y2="1200"/>
+    <line x1="750" y1="0" x2="750" y2="1200"/><line x1="900" y1="0" x2="900" y2="1200"/>
+    <line x1="1050" y1="0" x2="1050" y2="1200"/>
+  </g>
 
-  <!-- Step 3 -->
-  <rect x="100" y="510" width="1000" height="90" rx="18" fill="#020617" stroke="#06b6d4" stroke-width="2"/>
-  <text x="140" y="565" font-family="JetBrains Mono, monospace" font-size="20" font-weight="800" fill="#22d3ee">3. VECTOR INDEX</text>
-  <text x="400" y="565" font-family="Inter, sans-serif" font-size="18" fill="#cbd5e1">TF-IDF Embeddings &amp; Cosine Distance Matrix Calculation</text>
+  <!-- Outer card frame -->
+  <rect x="36" y="36" width="1128" height="1128" rx="28" fill="#0f172a" fill-opacity="0.97" filter="url(#shadow2)"/>
+  <rect x="36" y="36" width="1128" height="1128" rx="28" fill="none" stroke="#8b5cf6" stroke-opacity="0.25" stroke-width="1.5"/>
 
-  <!-- Step 4 -->
-  <rect x="100" y="630" width="1000" height="90" rx="18" fill="#020617" stroke="#ec4899" stroke-width="2"/>
-  <text x="140" y="685" font-family="JetBrains Mono, monospace" font-size="20" font-weight="800" fill="#f472b6">4. DISCOVERY</text>
-  <text x="400" y="685" font-family="Inter, sans-serif" font-size="18" fill="#cbd5e1">Auto-Generates Typed Edges (IMPLEMENTS / SAME_TOPIC / EXTENDS)</text>
+  <!-- Header -->
+  <rect x="36" y="36" width="1128" height="160" rx="28" fill="#8b5cf6" fill-opacity="0.08"/>
+  <line x1="36" y1="196" x2="1164" y2="196" stroke="#1e293b" stroke-width="1.5"/>
 
-  <!-- Step 5 -->
-  <rect x="100" y="750" width="1000" height="90" rx="18" fill="#020617" stroke="#10b981" stroke-width="2"/>
-  <text x="140" y="805" font-family="JetBrains Mono, monospace" font-size="20" font-weight="800" fill="#34d399">5. VIEWS</text>
-  <text x="400" y="805" font-family="Inter, sans-serif" font-size="18" fill="#cbd5e1">Canvas Physics Graph • RAG AI Search • Evolution Timeline • Insights Hub</text>
+  <!-- Logo -->
+  <circle cx="100" cy="116" r="36" fill="#8b5cf6" fill-opacity="0.15"/>
+  <circle cx="100" cy="116" r="36" fill="none" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="100" y="124" font-family="serif" font-size="26" fill="#c084fc" text-anchor="middle">⚙️</text>
 
-  <!-- Verified Technical Capabilities Grid -->
-  <rect x="100" y="890" width="1000" height="150" rx="22" fill="#0f172a" stroke="#1e293b" stroke-width="2"/>
-  <text x="130" y="930" font-family="JetBrains Mono, monospace" font-size="16" font-weight="800" fill="#94a3b8">VERIFIED TECHNICAL CAPABILITIES</text>
+  <text x="152" y="104" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="800" fill="#ffffff" letter-spacing="-1">SYSTEM ARCHITECTURE</text>
+  <text x="152" y="140" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="500" fill="#94a3b8">Multimodal AI Ingestion &amp; Auto-Discovery Pipeline</text>
 
-  <text x="130" y="975" font-family="Inter, sans-serif" font-size="18" font-weight="700" fill="#ffffff">✔ Zero-Dependency Vector Search</text>
-  <text x="130" y="1010" font-family="Inter, sans-serif" font-size="15" fill="#94a3b8">In-browser cosine distance calculation</text>
+  <!-- Slide 2 badge -->
+  <rect x="954" y="88" width="178" height="36" rx="18" fill="#8b5cf6" fill-opacity="0.2"/>
+  <rect x="954" y="88" width="178" height="36" rx="18" fill="none" stroke="#8b5cf6" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="1043" y="112" font-family="JetBrains Mono, Courier New, monospace" font-size="14" font-weight="700" fill="#c084fc" text-anchor="middle">02 / HOW IT WORKS</text>
 
-  <text x="600" y="975" font-family="Inter, sans-serif" font-size="18" font-weight="700" fill="#ffffff">✔ BFS Shortest Pathfinder</text>
-  <text x="600" y="1010" font-family="Inter, sans-serif" font-size="15" fill="#94a3b8">Multi-hop traversal algorithm</text>
+  <!-- ===== PIPELINE ===== -->
+
+  <!-- STEP 1: INGESTION -->
+  <rect x="60" y="218" width="1080" height="88" rx="16" fill="url(#step1)"/>
+  <rect x="60" y="218" width="1080" height="88" rx="16" fill="none" stroke="#3b82f6" stroke-opacity="0.5" stroke-width="1.5"/>
+  <rect x="60" y="218" width="8" height="88" rx="4" fill="#3b82f6"/>
+  <text x="90" y="258" font-family="JetBrains Mono, Courier New, monospace" font-size="16" font-weight="800" fill="#93c5fd">1. INGESTION</text>
+  <text x="90" y="284" font-family="Inter, Arial, sans-serif" font-size="15" fill="#94a3b8">PDF  •  DOCX  •  GitHub Repos  •  Email Threads  •  Chat Transcripts  •  Audio Notes  •  Notes</text>
+
+  <!-- Arrow -->
+  <rect x="588" y="308" width="24" height="24" rx="4" fill="#1e293b"/>
+  <text x="600" y="326" font-family="Arial, sans-serif" font-size="20" fill="#475569" text-anchor="middle">↓</text>
+
+  <!-- STEP 2: EXTRACTION -->
+  <rect x="60" y="334" width="1080" height="88" rx="16" fill="url(#step2)"/>
+  <rect x="60" y="334" width="1080" height="88" rx="16" fill="none" stroke="#8b5cf6" stroke-opacity="0.5" stroke-width="1.5"/>
+  <rect x="60" y="334" width="8" height="88" rx="4" fill="#8b5cf6"/>
+  <text x="90" y="374" font-family="JetBrains Mono, Courier New, monospace" font-size="16" font-weight="800" fill="#c084fc">2. ENTITY EXTRACTION</text>
+  <text x="90" y="400" font-family="Inter, Arial, sans-serif" font-size="15" fill="#94a3b8">AI Recognizer classifies: Projects  •  Technologies  •  Concepts  •  People  •  Datasets  •  Dates</text>
+
+  <!-- Arrow -->
+  <rect x="588" y="424" width="24" height="24" rx="4" fill="#1e293b"/>
+  <text x="600" y="442" font-family="Arial, sans-serif" font-size="20" fill="#475569" text-anchor="middle">↓</text>
+
+  <!-- STEP 3: VECTOR INDEX -->
+  <rect x="60" y="450" width="1080" height="88" rx="16" fill="url(#step3)"/>
+  <rect x="60" y="450" width="1080" height="88" rx="16" fill="none" stroke="#06b6d4" stroke-opacity="0.5" stroke-width="1.5"/>
+  <rect x="60" y="450" width="8" height="88" rx="4" fill="#06b6d4"/>
+  <text x="90" y="490" font-family="JetBrains Mono, Courier New, monospace" font-size="16" font-weight="800" fill="#22d3ee">3. VECTOR EMBEDDING INDEX</text>
+  <text x="90" y="516" font-family="Inter, Arial, sans-serif" font-size="15" fill="#94a3b8">TF-IDF tokenization  →  Cosine Distance Matrix  →  Semantic Similarity Ranking</text>
+
+  <!-- Arrow -->
+  <rect x="588" y="540" width="24" height="24" rx="4" fill="#1e293b"/>
+  <text x="600" y="558" font-family="Arial, sans-serif" font-size="20" fill="#475569" text-anchor="middle">↓</text>
+
+  <!-- STEP 4: DISCOVERY -->
+  <rect x="60" y="566" width="1080" height="88" rx="16" fill="url(#step4)"/>
+  <rect x="60" y="566" width="1080" height="88" rx="16" fill="none" stroke="#ec4899" stroke-opacity="0.5" stroke-width="1.5"/>
+  <rect x="60" y="566" width="8" height="88" rx="4" fill="#ec4899"/>
+  <text x="90" y="606" font-family="JetBrains Mono, Courier New, monospace" font-size="16" font-weight="800" fill="#f472b6">4. AUTO-RELATIONSHIP DISCOVERY</text>
+  <text x="90" y="632" font-family="Inter, Arial, sans-serif" font-size="15" fill="#94a3b8">Generates typed edges: IMPLEMENTS  •  SAME_TOPIC  •  EXTENDS  •  DEPENDS_ON  •  REFERENCES</text>
+
+  <!-- Arrow -->
+  <rect x="588" y="656" width="24" height="24" rx="4" fill="#1e293b"/>
+  <text x="600" y="674" font-family="Arial, sans-serif" font-size="20" fill="#475569" text-anchor="middle">↓</text>
+
+  <!-- STEP 5: VIEWS -->
+  <rect x="60" y="682" width="1080" height="88" rx="16" fill="url(#step5)"/>
+  <rect x="60" y="682" width="1080" height="88" rx="16" fill="none" stroke="#10b981" stroke-opacity="0.5" stroke-width="1.5"/>
+  <rect x="60" y="682" width="8" height="88" rx="4" fill="#10b981"/>
+  <text x="90" y="722" font-family="JetBrains Mono, Courier New, monospace" font-size="16" font-weight="800" fill="#34d399">5. PRESENTATION VIEWS</text>
+  <text x="90" y="748" font-family="Inter, Arial, sans-serif" font-size="15" fill="#94a3b8">Canvas Physics Graph  •  RAG AI Search  •  Evolution Timeline  •  Discovery Insights Hub</text>
+
+  <!-- === Technical Capabilities Grid === -->
+  <rect x="60" y="800" width="1080" height="210" rx="20" fill="#020617"/>
+  <rect x="60" y="800" width="1080" height="210" rx="20" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="84" y="836" font-family="JetBrains Mono, Courier New, monospace" font-size="13" font-weight="700" fill="#475569" letter-spacing="2">VERIFIED TECHNICAL CAPABILITIES</text>
+
+  <!-- Cap 1 -->
+  <rect x="80" y="852" width="244" height="70" rx="14" fill="#0f172a"/>
+  <rect x="80" y="852" width="244" height="70" rx="14" fill="none" stroke="#3b82f6" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="96" y="880" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#60a5fa">✔ Zero-Dependency</text>
+  <text x="96" y="900" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#60a5fa">Vector Search</text>
+
+  <!-- Cap 2 -->
+  <rect x="340" y="852" width="244" height="70" rx="14" fill="#0f172a"/>
+  <rect x="340" y="852" width="244" height="70" rx="14" fill="none" stroke="#8b5cf6" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="356" y="880" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#c084fc">✔ BFS Shortest</text>
+  <text x="356" y="900" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#c084fc">Pathfinder Algorithm</text>
+
+  <!-- Cap 3 -->
+  <rect x="600" y="852" width="244" height="70" rx="14" fill="#0f172a"/>
+  <rect x="600" y="852" width="244" height="70" rx="14" fill="none" stroke="#ec4899" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="616" y="880" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#f472b6">✔ Subgraph RAG</text>
+  <text x="616" y="900" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#f472b6">Reasoning Engine</text>
+
+  <!-- Cap 4 -->
+  <rect x="860" y="852" width="262" height="70" rx="14" fill="#0f172a"/>
+  <rect x="860" y="852" width="262" height="70" rx="14" fill="none" stroke="#10b981" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="876" y="880" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#34d399">✔ Neo4j Cypher</text>
+  <text x="876" y="900" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#34d399">+ Obsidian Vault Export</text>
 
   <!-- Footer -->
-  <line x1="100" y1="1070" x2="1100" y2="1070" stroke="#1e293b" stroke-width="1"/>
-  <text x="100" y="1110" font-family="JetBrains Mono, monospace" font-size="16" fill="#64748b">Verified Architecture • src/services/memoryEngine.ts</text>
-  <text x="1100" y="1110" font-family="JetBrains Mono, monospace" font-size="16" fill="#8b5cf6" text-anchor="end">github.com/vijaymahes9080/Memory-Graph</text>
+  <line x1="60" y1="1030" x2="1140" y2="1030" stroke="#1e293b" stroke-width="1"/>
+  <text x="600" y="1080" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">Verified Architecture  •  src/services/memoryEngine.ts</text>
+  <line x1="60" y1="1106" x2="1140" y2="1106" stroke="#1e293b" stroke-width="1"/>
+  <text x="80" y="1136" font-family="JetBrains Mono, Courier New, monospace" font-size="14" fill="#475569">By Vijay Mahes  •  Vijaypradhap2004@gmail.com</text>
+  <text x="1120" y="1136" font-family="JetBrains Mono, Courier New, monospace" font-size="14" fill="#8b5cf6" text-anchor="end">github.com/vijaymahes9080/Memory-Graph</text>
 </svg>

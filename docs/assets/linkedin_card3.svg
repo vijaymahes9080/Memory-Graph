@@ -1,40 +1,159 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200">
-  <rect width="1200" height="1200" fill="#030712"/>
-  <rect x="50" y="50" width="1100" height="1100" rx="36" fill="#0f172a" fill-opacity="0.9" stroke="#ec4899" stroke-opacity="0.3" stroke-width="2"/>
-  
-  <text x="100" y="140" font-family="Inter, sans-serif" font-size="44" font-weight="800" fill="#ffffff">REAL PRODUCT CAPABILITIES &amp; IMPACT</text>
-  <text x="100" y="185" font-family="JetBrains Mono, monospace" font-size="22" font-weight="600" fill="#ec4899">Engineered &amp; Verified Feature Modules</text>
-  <line x1="100" y1="220" x2="1100" y2="220" stroke="#1e293b" stroke-width="2"/>
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#030712"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="c1grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e3a8a" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#020617" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="c2grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#164e63" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#020617" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="c3grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#831843" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#020617" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="c4grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4c1d95" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#020617" stop-opacity="0.5"/>
+    </linearGradient>
+    <filter id="shadow3">
+      <feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
 
-  <!-- Quad Feature Grid -->
-  <!-- Card 1 -->
-  <rect x="100" y="260" width="480" height="280" rx="22" fill="#020617" stroke="#3b82f6" stroke-width="2"/>
-  <text x="130" y="310" font-family="Inter, sans-serif" font-size="22" font-weight="800" fill="#60a5fa">🔍 RAG Subgraph Assistant</text>
-  <text x="130" y="350" font-family="Inter, sans-serif" font-size="16" fill="#cbd5e1">Conversational query engine that answers complex questions by traversing connected subgraphs with inline evidence citations.</text>
+  <!-- Background -->
+  <rect width="1200" height="1200" fill="url(#bg3)"/>
 
-  <!-- Card 2 -->
-  <rect x="620" y="260" width="480" height="280" rx="22" fill="#020617" stroke="#06b6d4" stroke-width="2"/>
-  <text x="650" y="310" font-family="Inter, sans-serif" font-size="22" font-weight="800" fill="#22d3ee">⏱️ Evolution Timeline</text>
-  <text x="650" y="350" font-family="Inter, sans-serif" font-size="16" fill="#cbd5e1">Interactive time scrubber with play/pause animations showing how ideas evolved into code repos and papers over time.</text>
+  <!-- Grid -->
+  <g stroke="#ffffff" stroke-opacity="0.03" stroke-width="1">
+    <line x1="0" y1="100" x2="1200" y2="100"/><line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/><line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/><line x1="0" y1="600" x2="1200" y2="600"/>
+    <line x1="0" y1="700" x2="1200" y2="700"/><line x1="0" y1="800" x2="1200" y2="800"/>
+    <line x1="0" y1="900" x2="1200" y2="900"/><line x1="0" y1="1000" x2="1200" y2="1000"/>
+    <line x1="0" y1="1100" x2="1200" y2="1100"/>
+    <line x1="150" y1="0" x2="150" y2="1200"/><line x1="300" y1="0" x2="300" y2="1200"/>
+    <line x1="450" y1="0" x2="450" y2="1200"/><line x1="600" y1="0" x2="600" y2="1200"/>
+    <line x1="750" y1="0" x2="750" y2="1200"/><line x1="900" y1="0" x2="900" y2="1200"/>
+    <line x1="1050" y1="0" x2="1050" y2="1200"/>
+  </g>
 
-  <!-- Card 3 -->
-  <rect x="100" y="570" width="480" height="280" rx="22" fill="#020617" stroke="#ec4899" stroke-width="2"/>
-  <text x="130" y="620" font-family="Inter, sans-serif" font-size="22" font-weight="800" fill="#f472b6">⚡ Relationship Discovery</text>
-  <text x="130" y="660" font-family="Inter, sans-serif" font-size="16" fill="#cbd5e1">Live feed of AI auto-discovered links with confidence scores, contradiction alerts, and knowledge gap advice.</text>
+  <!-- Outer card frame -->
+  <rect x="36" y="36" width="1128" height="1128" rx="28" fill="#0f172a" fill-opacity="0.97" filter="url(#shadow3)"/>
+  <rect x="36" y="36" width="1128" height="1128" rx="28" fill="none" stroke="#ec4899" stroke-opacity="0.25" stroke-width="1.5"/>
 
-  <!-- Card 4 -->
-  <rect x="620" y="570" width="480" height="280" rx="22" fill="#020617" stroke="#8b5cf6" stroke-width="2"/>
-  <text x="650" y="620" font-family="Inter, sans-serif" font-size="22" font-weight="800" fill="#c084fc">📊 Graph Analytics</text>
-  <text x="650" y="660" font-family="Inter, sans-serif" font-size="16" fill="#cbd5e1">Quantitative analytics metrics on connectivity density, automated link ratios, and functional entity type breakdowns.</text>
+  <!-- Header -->
+  <rect x="36" y="36" width="1128" height="160" rx="28" fill="#ec4899" fill-opacity="0.07"/>
+  <line x1="36" y1="196" x2="1164" y2="196" stroke="#1e293b" stroke-width="1.5"/>
 
-  <!-- Impact Statement -->
-  <rect x="100" y="880" width="1000" height="150" rx="22" fill="#0f172a" stroke="#1e293b" stroke-width="2"/>
-  <text x="130" y="925" font-family="JetBrains Mono, monospace" font-size="16" font-weight="800" fill="#f472b6">REAL IMPACT STATEMENT</text>
-  <text x="130" y="965" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="#ffffff">Designed to solve personal knowledge fragmentation by transforming static</text>
-  <text x="130" y="995" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="#ffffff">file storage into an AI-powered operating system for knowledge.</text>
+  <!-- Logo -->
+  <circle cx="100" cy="116" r="36" fill="#ec4899" fill-opacity="0.15"/>
+  <circle cx="100" cy="116" r="36" fill="none" stroke="#ec4899" stroke-width="1.5"/>
+  <text x="100" y="124" font-family="serif" font-size="26" fill="#f472b6" text-anchor="middle">🚀</text>
+
+  <text x="152" y="104" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="800" fill="#ffffff" letter-spacing="-1">REAL PRODUCT CAPABILITIES</text>
+  <text x="152" y="140" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="500" fill="#94a3b8">Engineered &amp; Verified Feature Modules — Memory Graph in Action</text>
+
+  <!-- Slide badge -->
+  <rect x="942" y="88" width="192" height="36" rx="18" fill="#ec4899" fill-opacity="0.2"/>
+  <rect x="942" y="88" width="192" height="36" rx="18" fill="none" stroke="#ec4899" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="1038" y="112" font-family="JetBrains Mono, Courier New, monospace" font-size="14" font-weight="700" fill="#f472b6" text-anchor="middle">03 / REAL PRODUCT</text>
+
+  <!-- ===== 4 FEATURE CARDS ===== -->
+
+  <!-- Card 1: RAG Assistant (top-left) -->
+  <rect x="60" y="218" width="524" height="270" rx="20" fill="url(#c1grad)"/>
+  <rect x="60" y="218" width="524" height="270" rx="20" fill="none" stroke="#3b82f6" stroke-opacity="0.5" stroke-width="1.5"/>
+  <rect x="60" y="218" width="524" height="8" rx="4" fill="#3b82f6"/>
+  <!-- Icon circle -->
+  <circle cx="110" cy="288" r="30" fill="#3b82f6" fill-opacity="0.2"/>
+  <circle cx="110" cy="288" r="30" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="110" y="296" font-family="serif" font-size="22" fill="#60a5fa" text-anchor="middle">🔍</text>
+  <text x="156" y="272" font-family="JetBrains Mono, Courier New, monospace" font-size="13" font-weight="700" fill="#93c5fd">RAG SUBGRAPH ASSISTANT</text>
+  <text x="156" y="296" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800" fill="#ffffff">AI-Powered</text>
+  <text x="156" y="320" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800" fill="#ffffff">Knowledge Query</text>
+  <line x1="80" y1="348" x2="564" y2="348" stroke="#1e293b" stroke-width="1"/>
+  <text x="80" y="378" font-family="Inter, Arial, sans-serif" font-size="15" fill="#94a3b8">Answers complex questions by traversing</text>
+  <text x="80" y="400" font-family="Inter, Arial, sans-serif" font-size="15" fill="#94a3b8">connected subgraphs with citation badges</text>
+  <text x="80" y="426" font-family="Inter, Arial, sans-serif" font-size="15" fill="#94a3b8">and RAG confidence scores.</text>
+  <rect x="80" y="452" width="200" height="30" rx="10" fill="#1e3a8a" fill-opacity="0.6"/>
+  <text x="180" y="472" font-family="JetBrains Mono, Courier New, monospace" font-size="13" fill="#93c5fd" text-anchor="middle">AiAssistantView.tsx</text>
+
+  <!-- Card 2: Timeline (top-right) -->
+  <rect x="616" y="218" width="524" height="270" rx="20" fill="url(#c2grad)"/>
+  <rect x="616" y="218" width="524" height="270" rx="20" fill="none" stroke="#06b6d4" stroke-opacity="0.5" stroke-width="1.5"/>
+  <rect x="616" y="218" width="524" height="8" rx="4" fill="#06b6d4"/>
+  <circle cx="666" cy="288" r="30" fill="#06b6d4" fill-opacity="0.2"/>
+  <circle cx="666" cy="288" r="30" fill="none" stroke="#06b6d4" stroke-width="1.5"/>
+  <text x="666" y="296" font-family="serif" font-size="22" fill="#22d3ee" text-anchor="middle">⏱️</text>
+  <text x="712" y="272" font-family="JetBrains Mono, Courier New, monospace" font-size="13" font-weight="700" fill="#22d3ee">EVOLUTION TIMELINE</text>
+  <text x="712" y="296" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800" fill="#ffffff">Temporal Memory</text>
+  <text x="712" y="320" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800" fill="#ffffff">Scrubber</text>
+  <line x1="636" y1="348" x2="1120" y2="348" stroke="#1e293b" stroke-width="1"/>
+  <text x="636" y="378" font-family="Inter, Arial, sans-serif" font-size="15" fill="#94a3b8">Time scrubber interface (Sep 2025 –</text>
+  <text x="636" y="400" font-family="Inter, Arial, sans-serif" font-size="15" fill="#94a3b8">Feb 2026) with play/pause animation</text>
+  <text x="636" y="422" font-family="Inter, Arial, sans-serif" font-size="15" fill="#94a3b8">showing how ideas evolved into code.</text>
+  <rect x="636" y="452" width="188" height="30" rx="10" fill="#164e63" fill-opacity="0.6"/>
+  <text x="730" y="472" font-family="JetBrains Mono, Courier New, monospace" font-size="13" fill="#22d3ee" text-anchor="middle">TimelineView.tsx</text>
+
+  <!-- Card 3: Relationship Discovery (bottom-left) -->
+  <rect x="60" y="504" width="524" height="270" rx="20" fill="url(#c3grad)"/>
+  <rect x="60" y="504" width="524" height="270" rx="20" fill="none" stroke="#ec4899" stroke-opacity="0.5" stroke-width="1.5"/>
+  <rect x="60" y="504" width="524" height="8" rx="4" fill="#ec4899"/>
+  <circle cx="110" cy="574" r="30" fill="#ec4899" fill-opacity="0.2"/>
+  <circle cx="110" cy="574" r="30" fill="none" stroke="#ec4899" stroke-width="1.5"/>
+  <text x="110" y="582" font-family="serif" font-size="22" fill="#f472b6" text-anchor="middle">⚡</text>
+  <text x="156" y="558" font-family="JetBrains Mono, Courier New, monospace" font-size="13" font-weight="700" fill="#f472b6">RELATIONSHIP DISCOVERY</text>
+  <text x="156" y="582" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800" fill="#ffffff">AI Auto-Discovered</text>
+  <text x="156" y="606" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800" fill="#ffffff">Live Insight Feed</text>
+  <line x1="80" y1="634" x2="564" y2="634" stroke="#1e293b" stroke-width="1"/>
+  <text x="80" y="664" font-family="Inter, Arial, sans-serif" font-size="15" fill="#94a3b8">Live feed of AI-discovered links with</text>
+  <text x="80" y="686" font-family="Inter, Arial, sans-serif" font-size="15" fill="#94a3b8">confidence scores, contradiction alerts,</text>
+  <text x="80" y="708" font-family="Inter, Arial, sans-serif" font-size="15" fill="#94a3b8">and knowledge gap recommendations.</text>
+  <rect x="80" y="736" width="228" height="30" rx="10" fill="#831843" fill-opacity="0.6"/>
+  <text x="194" y="756" font-family="JetBrains Mono, Courier New, monospace" font-size="13" fill="#f472b6" text-anchor="middle">ContextInsightsView.tsx</text>
+
+  <!-- Card 4: Graph Analytics (bottom-right) -->
+  <rect x="616" y="504" width="524" height="270" rx="20" fill="url(#c4grad)"/>
+  <rect x="616" y="504" width="524" height="270" rx="20" fill="none" stroke="#8b5cf6" stroke-opacity="0.5" stroke-width="1.5"/>
+  <rect x="616" y="504" width="524" height="8" rx="4" fill="#8b5cf6"/>
+  <circle cx="666" cy="574" r="30" fill="#8b5cf6" fill-opacity="0.2"/>
+  <circle cx="666" cy="574" r="30" fill="none" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="666" y="582" font-family="serif" font-size="22" fill="#c084fc" text-anchor="middle">📊</text>
+  <text x="712" y="558" font-family="JetBrains Mono, Courier New, monospace" font-size="13" font-weight="700" fill="#c084fc">GRAPH ANALYTICS</text>
+  <text x="712" y="582" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800" fill="#ffffff">Intelligence &amp;</text>
+  <text x="712" y="606" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800" fill="#ffffff">Density Metrics</text>
+  <line x1="636" y1="634" x2="1120" y2="634" stroke="#1e293b" stroke-width="1"/>
+  <text x="636" y="664" font-family="Inter, Arial, sans-serif" font-size="15" fill="#94a3b8">Quantitative metrics on connectivity</text>
+  <text x="636" y="686" font-family="Inter, Arial, sans-serif" font-size="15" fill="#94a3b8">density, automated link ratio (94.8%),</text>
+  <text x="636" y="708" font-family="Inter, Arial, sans-serif" font-size="15" fill="#94a3b8">and entity type distribution charts.</text>
+  <rect x="636" y="736" width="188" height="30" rx="10" fill="#4c1d95" fill-opacity="0.6"/>
+  <text x="730" y="756" font-family="JetBrains Mono, Courier New, monospace" font-size="13" fill="#c084fc" text-anchor="middle">AnalyticsView.tsx</text>
+
+  <!-- ===== IMPACT SECTION ===== -->
+  <rect x="60" y="800" width="1080" height="180" rx="20" fill="#020617"/>
+  <rect x="60" y="800" width="1080" height="180" rx="20" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+  <rect x="60" y="800" width="6" height="180" rx="3" fill="#ec4899"/>
+
+  <text x="84" y="840" font-family="JetBrains Mono, Courier New, monospace" font-size="14" font-weight="700" fill="#f472b6" letter-spacing="2">REAL IMPACT</text>
+  <text x="84" y="882" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#ffffff">Designed to solve personal knowledge fragmentation</text>
+  <text x="84" y="916" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#ffffff">by transforming isolated files into a living, connected</text>
+  <text x="84" y="950" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#f472b6">AI-powered memory operating system.</text>
 
   <!-- Footer -->
-  <line x1="100" y1="1060" x2="1100" y2="1060" stroke="#1e293b" stroke-width="1"/>
-  <text x="100" y="1095" font-family="JetBrains Mono, monospace" font-size="16" fill="#64748b">Author: Vijay Mahes (Vijaypradhap2004@gmail.com)</text>
-  <text x="1100" y="1095" font-family="JetBrains Mono, monospace" font-size="16" fill="#ec4899" text-anchor="end">github.com/vijaymahes9080/Memory-Graph</text>
+  <line x1="60" y1="1010" x2="1140" y2="1010" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- GitHub link row -->
+  <rect x="60" y="1026" width="1080" height="60" rx="16" fill="#0f172a"/>
+  <rect x="60" y="1026" width="1080" height="60" rx="16" fill="none" stroke="#1e293b" stroke-width="1"/>
+  <text x="84" y="1064" font-family="JetBrains Mono, Courier New, monospace" font-size="18" font-weight="700" fill="#3b82f6">GitHub:</text>
+  <text x="192" y="1064" font-family="JetBrains Mono, Courier New, monospace" font-size="18" fill="#94a3b8">https://github.com/vijaymahes9080/Memory-Graph</text>
+
+  <line x1="60" y1="1108" x2="1140" y2="1108" stroke="#1e293b" stroke-width="1"/>
+  <text x="80" y="1138" font-family="JetBrains Mono, Courier New, monospace" font-size="14" fill="#475569">By Vijay Mahes  •  Vijaypradhap2004@gmail.com</text>
+  <text x="1120" y="1138" font-family="JetBrains Mono, Courier New, monospace" font-size="14" fill="#ec4899" text-anchor="end">Memory Graph  •  AI Knowledge Infrastructure</text>
 </svg>
