@@ -2,10 +2,6 @@
 
 *Professional LinkedIn Product Showcase based 100% on the verified codebase of **Memory Graph** ([https://github.com/vijaymahes9080/Memory-Graph.git](https://github.com/vijaymahes9080/Memory-Graph.git)).*
 
-> ⚡ **Instant Image Access**: Vector SVG files and live in-browser 1200x1200px HTML rendering cards are pre-generated inside your repository for zero-wait time!
-> - **Live Browser Cards**: Open `http://localhost:3000/linkedin-cards.html` in your browser.
-> - **Vector SVG Files**: Located in [`docs/assets/linkedin_card1.svg`](file:///d:/intership/mem/docs/assets/linkedin_card1.svg), [`docs/assets/linkedin_card2.svg`](file:///d:/intership/mem/docs/assets/linkedin_card2.svg), and [`docs/assets/linkedin_card3.svg`](file:///d:/intership/mem/docs/assets/linkedin_card3.svg).
-
 ---
 
 ## 🔍 STEP 1 — FULL PROJECT ANALYSIS (Verified from Repository)
@@ -50,15 +46,46 @@ A high-performance Web Application (**Memory Graph — AI Knowledge Infrastructu
 
 ---
 
-# 🎨 LINKEDIN CAROUSEL SLIDE SPECIFICATIONS & PREVIEW CARDS
+# 🎨 LINKEDIN CAROUSEL SLIDE SPECIFICATIONS
 
 ---
 
 ## 🖼️ IMAGE 1 — HERO / WHAT I BUILT
 
-![Image 1: Hero Showcase Card](docs/assets/linkedin_card1.svg)
+### Purpose
+Immediately communicate: **What did I build and why does it matter?**
 
-### Layout & Copy Details
+### Layout Structure (1200 × 1200 px)
+
+```
+┌────────────────────────────────────────────────────────────────────────┐
+│                                                                        │
+│  [TOP BRANDING STRIP]                                                  │
+│  🧠 MEMORY GRAPH                                                       │
+│  An AI-Powered Operating System for Personal Knowledge                 │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────┤
+│                                                                        │
+│  [MAIN VISUAL — APPLICATION CANVAS GRAPH EXPLORER]                     │
+│  ┌──────────────────────────────────────────────────────────────────┐  │
+│  │  🕸️ Interactive Physics Node Canvas                              │  │
+│  │  • Nodes: Disaster Command PDF ↔ Flood ML Repo ↔ Sentinel Radar   │  │
+│  │  • Glowing Edges: IMPLEMENTS • SAME_TOPIC • DEPENDS_ON           │  │
+│  │  • Pathfinder: Shortest path between PDF blueprint & PyTorch     │  │
+│  └──────────────────────────────────────────────────────────────────┘  │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────┤
+│                                                                        │
+│  [BOTTOM FEATURE HIGHLIGHT STRIP]                                      │
+│  ⚡ AI Relationship Discovery | 🔍 Subgraph RAG | ⏱️ Time Scrubbing    │
+│                                                                        │
+│  [TECHNOLOGY STRIP]                                                    │
+│  React 18  |  TypeScript 5.7  |  Vite 6  |  TailwindCSS  |  Canvas API  │
+│                                                                        │
+└────────────────────────────────────────────────────────────────────────┘
+```
+
+### Visual & Copy Content
 - **Headline**: `MEMORY GRAPH`
 - **Sub-headline**: `An AI-Powered Operating System for Personal Knowledge`
 - **Main Visual**: Interactive Force-Directed Canvas Graph Explorer displaying connected nodes (`AI Disaster Command Center.pdf`, `Flood-Prediction-ML Repo`, `Sentinel-1 Radar Telemetry`, `Agriculture Hydrology Paper`).
@@ -69,9 +96,46 @@ A high-performance Web Application (**Memory Graph — AI Knowledge Infrastructu
 
 ## 🖼️ IMAGE 2 — ARCHITECTURE / HOW IT WORKS
 
-![Image 2: Architecture Infographic Card](docs/assets/linkedin_card2.svg)
+### Purpose
+Answer: **How does this project actually work under the hood?**
 
-### Layout & Copy Details
+### Layout Structure (1200 × 1200 px)
+
+```
+┌────────────────────────────────────────────────────────────────────────┐
+│                                                                        │
+│  [HEADER]                                                              │
+│  SYSTEM ARCHITECTURE & MULTIMODAL PIPELINE                             │
+│  How Memory Graph Continuously Ingests & Connects Knowledge            │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────┤
+│                                                                        │
+│  [PIPELINE FLOW DIAGRAM]                                               │
+│                                                                        │
+│  [1. INGESTION]      PDF • Chat • Email • GitHub Repos • Notes       │
+│                             │                                          │
+│                             ▼                                          │
+│  [2. EXTRACTION]     AI Entity Recognizer & Tokenizer                  │
+│                             │                                          │
+│                             ▼                                          │
+│  [3. VECTOR INDEX]   TF-IDF Embeddings & Cosine Distance Matrix        │
+│                             │                                          │
+│                             ▼                                          │
+│  [4. DISCOVERY]      Auto-Generates Typed Edges (IMPLEMENTS / EXTENDS) │
+│                             │                                          │
+│                             ▼                                          │
+│  [5. PRESENTATION]   Graph Explorer • RAG Search • Timeline Scrubber   │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────┤
+│                                                                        │
+│  [VERIFIED TECHNICAL CAPABILITIES]                                     │
+│  ✔ In-Memory Vector Search     ✔ BFS Shortest Pathfinder Algorithm     │
+│  ✔ Subgraph RAG Reasoning      ✔ Neo4j & Obsidian Vault Export         │
+│                                                                        │
+└────────────────────────────────────────────────────────────────────────┘
+```
+
+### Visual & Copy Content
 - **Header**: `SYSTEM ARCHITECTURE & PIPELINE`
 - **Sub-header**: `Verified Data Flow & AI Processing Engine`
 - **5 Pipeline Steps**:
@@ -88,10 +152,49 @@ A high-performance Web Application (**Memory Graph — AI Knowledge Infrastructu
 
 ## 🖼️ IMAGE 3 — REAL PRODUCT / FEATURES / IMPACT
 
-![Image 3: Real Product Features & Impact Card](docs/assets/linkedin_card3.svg)
+### Purpose
+Answer: **What can the finished application actually do?**
 
-### Layout & Copy Details
-- **Header**: `REAL PRODUCT CAPABILITIES & IMPACT`
+### Layout Structure (1200 × 1200 px)
+
+```
+┌────────────────────────────────────────────────────────────────────────┐
+│                                                                        │
+│  [HEADER]                                                              │
+│  REAL APPLICATION CAPABILITIES & IMPACT                                │
+│  Memory Graph in Action                                                │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────┤
+│                                                                        │
+│  [QUAD SCREENSHOT MATRIX]                                              │
+│                                                                        │
+│  ┌─────────────────────────────┐  ┌─────────────────────────────┐  │
+│  │ 🔍 RAG AI ASSISTANT         │  │ ⏱️ EVOLUTION TIMELINE       │  │
+│  │ Subgraph reasoning & RAG    │  │ Time scrubbing Sep-Feb      │  │
+│  │ evidence citations          │  │ node emergence animation    │  │
+│  └─────────────────────────────┘  └─────────────────────────────┘  │
+│  ┌─────────────────────────────┐  ┌─────────────────────────────┐  │
+│  │ ⚡ RELATIONSHIP DISCOVERY   │  │ 📊 GRAPH ANALYTICS          │  │
+│  │ AI-discovered link feed     │  │ Density metrics & entity    │  │
+│  │ & contradiction detector    │  │ breakdown charts            │  │
+│  └─────────────────────────────┘  └─────────────────────────────┘  │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────┤
+│                                                                        │
+│  [IMPACT STATEMENT]                                                    │
+│  Designed to simplify personal knowledge fragmentation by converting   │
+│  isolated files into an interconnected AI memory network.              │
+│                                                                        │
+│  [LINKS & CREDENTIALS]                                                 │
+│  GitHub Repository: https://github.com/vijaymahes9080/Memory-Graph.git │
+│  Author: Vijay Mahes (Vijaypradhap2004@gmail.com)                      │
+│                                                                        │
+└────────────────────────────────────────────────────────────────────────┘
+```
+
+### Visual & Copy Content
+- **Header**: `REAL APPLICATION CAPABILITIES`
+- **Sub-header**: `Engineered & Tested Feature Modules`
 - **Quad Feature Cards**:
   - `🔍 RAG Subgraph Assistant`: Answers complex questions by traversing connected subgraphs.
   - `⏱️ Evolution Timeline`: Time scrubber showing how ideas evolved over time.
