@@ -1,0 +1,12 @@
+{
+    "name": "vijaymahes/memory-graph",
+    "description": "Memory Graph project",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Vijay Mahes",
+            "email": "Vijaypradhap2004@gmail.com"
+        }
+    ],
+    "require": {}
+}
