@@ -4,8 +4,15 @@ import { GraphExplorer } from './components/GraphExplorer';
 import { AiAssistantView } from './components/AiAssistantView';
 import { TimelineView } from './components/TimelineView';
 import { ContextInsightsView } from './components/ContextInsightsView';
+import { MindMapView } from './components/MindMapView';
+import { AnalyticsView } from './components/AnalyticsView';
+import { VectorProjectionView } from './components/VectorProjectionView';
+import { AdvancedQueryBuilder } from './components/AdvancedQueryBuilder';
+import { ActivityLogDrawer } from './components/ActivityLogDrawer';
 import { IngestionModal } from './components/IngestionModal';
 import { memoryEngine } from './services/memoryEngine';
+import { exportImportEngine } from './services/exportImportEngine';
+import { snapshotEngine } from './services/snapshotEngine';
 import { 
   GraphNode, 
   GraphEdge, 
@@ -13,10 +20,10 @@ import {
   Contradiction, 
   KnowledgeGap 
 } from './types/graph';
-import { Sparkles, X, CheckCircle2 } from 'lucide-react';
+import { Sparkles, X, Layers, BarChart2, Cpu, Download, Camera } from 'lucide-react';
 
 export const App: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<'graph' | 'ai' | 'timeline' | 'insights'>('graph');
+  const [activeTab, setActiveTab] = useState<'graph' | 'ai' | 'timeline' | 'insights' | 'mindmap' | 'analytics'>('graph');
   
   // Memory Graph State
   const [nodes, setNodes] = useState<GraphNode[]>([]);
@@ -45,7 +52,6 @@ export const App: React.FC = () => {
     refreshData();
   }, []);
 
-  // Handle successful document ingestion
   const handleIngestSuccess = (result: { newNode: GraphNode; newEdges: GraphEdge[]; discoveries: DiscoveredRelationship[] }) => {
     refreshData();
     setSelectedNode(result.newNode);
@@ -61,6 +67,24 @@ export const App: React.FC = () => {
         detail: `Added new ${result.newNode.type} entity to Memory Graph.`
       });
     }
+  };
+
+  const handleExportJson = () => {
+    const jsonStr = exportImportEngine.exportToJson();
+    const blob = new Blob([jsonStr], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `memory-graph-export-${Date.now()}.json`;
+    a.click();
+  };
+
+  const handleTakeSnapshot = () => {
+    const snap = snapshotEngine.createSnapshot(`Snapshot ${Date.now().toString().slice(-4)}`);
+    setToastMessage({
+      title: `📸 Graph Snapshot Created`,
+      detail: `Saved ${snap.nodeCount} nodes and ${snap.edgeCount} edges in historical state.`
+    });
   };
 
   return (
@@ -85,8 +109,8 @@ export const App: React.FC = () => {
 
       {/* Main Top Header Navigation */}
       <Header
-        activeTab={activeTab}
-        setActiveTab={setActiveTab}
+        activeTab={activeTab as any}
+        setActiveTab={setActiveTab as any}
         onOpenIngest={() => setIsIngestOpen(true)}
         stats={{
           totalNodes: nodes.length,
@@ -95,15 +119,70 @@ export const App: React.FC = () => {
         }}
       />
 
+      {/* Extra Innovation Controls Bar */}
+      <div className="bg-dark-800/60 border-b border-slate-800 px-6 py-2">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
+          <div className="flex items-center space-x-2">
+            <button
+              onClick={() => setActiveTab('mindmap')}
+              className={`px-3 py-1 rounded-lg text-xs font-semibold flex items-center space-x-1.5 transition-all ${
+                activeTab === 'mindmap' ? 'bg-brand-emerald text-slate-950 font-bold' : 'text-slate-300 hover:bg-dark-700'
+              }`}
+            >
+              <Layers className="w-3.5 h-3.5" />
+              <span>Taxonomy MindMap</span>
+            </button>
+
+            <button
+              onClick={() => setActiveTab('analytics')}
+              className={`px-3 py-1 rounded-lg text-xs font-semibold flex items-center space-x-1.5 transition-all ${
+                activeTab === 'analytics' ? 'bg-brand-purple text-white font-bold' : 'text-slate-300 hover:bg-dark-700'
+              }`}
+            >
+              <BarChart2 className="w-3.5 h-3.5" />
+              <span>Graph Analytics</span>
+            </button>
+          </div>
+
+          <div className="flex items-center space-x-2">
+            <button
+              onClick={handleTakeSnapshot}
+              className="px-3 py-1 rounded-lg bg-dark-700 text-xs text-slate-200 hover:text-white flex items-center space-x-1 border border-slate-700"
+            >
+              <Camera className="w-3.5 h-3.5 text-brand-cyan" />
+              <span>Take Snapshot</span>
+            </button>
+
+            <button
+              onClick={handleExportJson}
+              className="px-3 py-1 rounded-lg bg-dark-700 text-xs text-slate-200 hover:text-white flex items-center space-x-1 border border-slate-700"
+            >
+              <Download className="w-3.5 h-3.5 text-brand-purple" />
+              <span>Export JSON</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
       {/* Main Workspace Body */}
-      <main className="flex-1 max-w-7xl w-full mx-auto p-4 md:p-6 flex flex-col">
+      <main className="flex-1 max-w-7xl w-full mx-auto p-4 md:p-6 flex flex-col space-y-6">
+        
         {activeTab === 'graph' && (
-          <GraphExplorer
-            nodes={nodes}
-            edges={edges}
-            onSelectNode={setSelectedNode}
-            selectedNode={selectedNode}
-          />
+          <div className="flex-1 flex flex-col space-y-4">
+            <GraphExplorer
+              nodes={nodes}
+              edges={edges}
+              onSelectNode={setSelectedNode}
+              selectedNode={selectedNode}
+            />
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+              <AdvancedQueryBuilder onSelectNode={setSelectedNode} />
+              <VectorProjectionView nodes={nodes} onSelectNode={setSelectedNode} />
+            </div>
+
+            <ActivityLogDrawer />
+          </div>
         )}
 
         {activeTab === 'ai' && (
@@ -139,6 +218,25 @@ export const App: React.FC = () => {
             }}
           />
         )}
+
+        {activeTab === 'mindmap' && (
+          <MindMapView
+            nodes={nodes}
+            onSelectNode={(node) => {
+              setSelectedNode(node);
+              setActiveTab('graph');
+            }}
+          />
+        )}
+
+        {activeTab === 'analytics' && (
+          <AnalyticsView
+            nodes={nodes}
+            edges={edges}
+            discoveries={discoveries}
+          />
+        )}
+
       </main>
 
       {/* Multimodal Ingestion Modal */}
