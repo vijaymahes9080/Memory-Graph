@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Graph — LinkedIn 1200x1200px Showcase Cards</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #030712; color: #f3f4f6; }
+    .card-frame { width: 1200px; height: 1200px; zoom: 0.6; }
+    .glass-card {
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(59, 130, 246, 0.25);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+    }
+  </style>
+</head>
+<body class="p-8 space-y-12 flex flex-col items-center">
+
+  <div className="text-center space-y-2 max-w-2xl">
+    <h1 class="text-3xl font-extrabold text-white">LinkedIn 1200×1200px Product Showcase Cards</h1>
+    <p class="text-sm text-slate-400">Instant HTML/CSS Cards rendered for high-resolution LinkedIn carousel posts.</p>
+  </div>
+
+  <!-- SLIDE 1: HERO / WHAT I BUILT -->
+  <div class="card-frame glass-card rounded-3xl p-12 flex flex-col justify-between relative overflow-hidden">
+    
+    <!-- Top Branding -->
+    <div class="flex items-center justify-between border-b border-slate-800/80 pb-6">
+      <div class="flex items-center space-x-4">
+        <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-blue-600 via-purple-600 to-cyan-400 flex items-center justify-center text-white text-3xl font-bold shadow-lg shadow-blue-500/30">
+          🧠
+        </div>
+        <div>
+          <h1 class="text-4xl font-extrabold text-white tracking-tight">MEMORY GRAPH</h1>
+          <p class="text-lg text-cyan-400 font-mono">AI Knowledge Infrastructure Platform</p>
+        </div>
+      </div>
+      <span class="px-4 py-1.5 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/40 text-sm font-mono font-bold">
+        v2.4 AI Core
+      </span>
+    </div>
+
+    <!-- Center Main Visual Graph -->
+    <div class="my-auto p-8 rounded-3xl bg-slate-950/80 border border-slate-800 space-y-6 text-center relative">
+      <div class="text-xs font-mono text-slate-400 uppercase tracking-widest">Interactive Force-Directed Memory Canvas</div>
+      
+      <!-- Simulated Node Network Visual -->
+      <div class="relative w-full h-80 flex items-center justify-center">
+        <!-- Connecting Edges -->
+        <svg class="absolute inset-0 w-full h-full stroke-blue-500/40 stroke-2">
+          <line x1="200" y1="100" x2="400" y2="200" stroke-dasharray="6,6" stroke="#ec4899" />
+          <line x1="400" y1="200" x2="600" y2="120" stroke="#3b82f6" />
+          <line x1="400" y1="200" x2="350" y2="280" stroke="#8b5cf6" />
+        </svg>
+
+        <div class="absolute left-28 top-16 p-4 rounded-2xl bg-purple-900/60 border border-purple-500 text-left space-y-1">
+          <span class="text-[10px] font-mono text-purple-300 font-bold">DOCUMENT (PDF)</span>
+          <div class="text-sm font-bold text-white">AI Disaster Command Center.pdf</div>
+          <span class="text-[10px] text-slate-400">SAR Radar Flood Detection Spec</span>
+        </div>
+
+        <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 p-6 rounded-3xl bg-blue-900/80 border-2 border-blue-400 shadow-2xl text-left space-y-1 z-10">
+          <span class="text-xs font-mono text-blue-300 font-bold">PROJECT HUB</span>
+          <div class="text-lg font-extrabold text-white">Disaster Management Platform</div>
+          <span class="text-xs text-slate-300">Tying code, sensors & papers</span>
+        </div>
+
+        <div class="absolute right-28 top-20 p-4 rounded-2xl bg-emerald-900/60 border border-emerald-500 text-left space-y-1">
+          <span class="text-[10px] font-mono text-emerald-300 font-bold">CODE REPO (GITHUB)</span>
+          <div class="text-sm font-bold text-white">Flood-Prediction-ML</div>
+          <span class="text-[10px] text-slate-400">PyTorch U-Net Model (flood_unet.py)</span>
+        </div>
+      </div>
+
+      <div class="text-sm text-slate-300 font-medium">
+        ⚡ <strong class="text-pink-400">AI Auto-Discovered:</strong> Code module <code class="text-cyan-300 font-mono">satellite_module.py</code> directly implements radar algorithms from PDF.
+      </div>
+    </div>
+
+    <!-- Bottom Feature Pills & Tech Strip -->
+    <div class="space-y-4 pt-4 border-t border-slate-800/80">
+      <div class="grid grid-cols-4 gap-3 text-center text-xs font-semibold">
+        <div class="p-3 rounded-xl bg-slate-900 border border-slate-800 text-cyan-300">⚡ Relationship Discovery</div>
+        <div class="p-3 rounded-xl bg-slate-900 border border-slate-800 text-purple-300">🔍 Subgraph RAG Assistant</div>
+        <div class="p-3 rounded-xl bg-slate-900 border border-slate-800 text-pink-300">⏱️ Evolution Timeline</div>
+        <div class="p-3 rounded-xl bg-slate-900 border border-slate-800 text-emerald-300">🕸️ Force-Directed Canvas</div>
+      </div>
+
+      <div class="flex items-center justify-between text-xs font-mono text-slate-400 pt-2 border-t border-slate-900">
+        <span>Tech Stack: React 18 • TypeScript 5.7 • Vite 6 • TailwindCSS • Canvas API</span>
+        <span>github.com/vijaymahes9080/Memory-Graph</span>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
