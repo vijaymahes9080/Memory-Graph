@@ -1,117 +1,174 @@
 # 🧠 Memory Graph — AI Knowledge Infrastructure
 
-> **Don't store information. Build relationships between it.**
+> **Don't store information. Build relationships between it.**  
 > An AI-powered operating system for personal knowledge that continuously ingests files, code repositories, notes, and communications, extracts entity graphs, and discovers hidden relationships.
 
 ---
 
-![Memory Graph Header Banner](https://img.shields.io/badge/Memory--Graph-v2.4--AI--Core-3b82f6?style=for-the-badge&logo=react&logoColor=white)
+<div align="center">
+
+![Memory Graph Banner](https://img.shields.io/badge/Memory--Graph-v2.4--AI--Core-3b82f6?style=for-the-badge&logo=react&logoColor=white)
 ![Build Status](https://img.shields.io/badge/Build-Passing-10b981?style=for-the-badge&logo=github-actions&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-8b5cf6?style=for-the-badge)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.7-06b6d4?style=for-the-badge&logo=typescript&logoColor=white)
+
+</div>
 
 ---
 
-## 🌟 Vision & Core Concept
+## 🌟 Core Concept: Everything Becomes Connected
 
-Traditional note-taking and cloud storage apps keep your information in isolated silos (PDFs in one folder, GitHub code in another, emails in your inbox).
+Traditional apps store information as isolated files. **Memory Graph** continuously extracts entities (People, Topics, Projects, Technologies, Concepts, Datasets, Dates) and connects them into a living memory network.
 
-**Memory Graph** changes this fundamental paradigm:
-
-```
-                    ┌──────────────┐
-                    │     USER     │
-                    └──────┬───────┘
-                           │
-        ┌──────────────────┼──────────────────┐
-        ↓                  ↓                  ↓
-      PDF                CHAT               EMAIL
-        │                  │                  │
-        └──────────────┬───┴──────────────────┘
-                       ↓
-                ┌───────────────┐
-                │   AI INGESTION │
-                │   + EXTRACTION │
-                └───────┬───────┘
-                        ↓
-             ┌─────────────────────┐
-             │  ENTITY EXTRACTION  │
-             │ People • Topics     │
-             │ Projects • Places   │
-             │ Concepts • Dates    │
-             └──────────┬──────────┘
-                        ↓
-              ┌──────────────────┐
-              │   MEMORY GRAPH   │
-              │                  │
-              │ A ─── B ─── C    │
-              │ │     │     │    │
-              │ D ─── E ─── F    │
-              └────────┬─────────┘
-                       ↓
-              ┌──────────────────┐
-              │ AI REASONING     │
-              │ Search • RAG     │
-              │ Insights • Links │
-              │ Predictions      │
-              └──────────────────┘
+```mermaid
+graph TD
+    User([USER]) --> PDF[PDF Document]
+    User --> Chat[Chat History]
+    User --> Email[Email Threads]
+    User --> Code[GitHub Code]
+    
+    PDF --> Ingest[AI Ingestion & Entity Extractor]
+    Chat --> Ingest
+    Email --> Ingest
+    Code --> Ingest
+    
+    Ingest --> Entities[Entities: People • Topics • Code • Concepts • Dates]
+    Entities --> Graph[Memory Knowledge Graph]
+    
+    Graph --> RAG[RAG AI Reasoning & Search Engine]
+    Graph --> Discovery[Automatic Relationship Discovery]
+    Graph --> Timeline[Temporal Knowledge Evolution Timeline]
 ```
 
 ---
 
-## 🔥 The Killer Feature: Continuous Relationship Discovery
+## 🔥 The Killer Feature: Automatic Relationship Discovery
 
-Memory Graph doesn't rely solely on links manually created by the user. Its **AI Relationship Discovery Pipeline** continuously scans term frequencies, TF-IDF vector embeddings, and entity overlaps to discover implicit cross-source links:
+Memory Graph automatically discovers non-obvious relationships that the user never explicitly created.
 
-- 📄 **PDF Blueprint** ➔ 💻 **GitHub Code**: Discovers that `satellite_module.py` implements the exact Sentinel-1 radar backscatter algorithm described in `AI Disaster Command Center.pdf`.
-- 📧 **Email Credentials** ➔ 🚀 **Project**: Links ESA Copernicus API stream approval to your Flood Detection platform requirements.
-- 🔬 **Research Paper** ➔ 🌾 **Agriculture Model**: Connects soil hydrology research papers to your satellite radar preprocessing code.
+```
+                  ┌──────────────────────────────────────────────┐
+                  │    AI DISASTER COMMAND CENTER (PDF)          │
+                  │    • SAR Radar Flood Detection Spec          │
+                  └──────────────────────┬───────────────────────┘
+                                         │
+                        ⚡ AI Auto-Discovered: IMPLEMENTS
+                                         │
+                                         ▼
+                  ┌──────────────────────────────────────────────┐
+                  │    FLOOD-PREDICTION-ML (GitHub Repo)         │
+                  │    • PyTorch U-Net Model (flood_unet.py)     │
+                  │    • GeoTIFF Normalizer (satellite_module.py)│
+                  └──────────────────────┬───────────────────────┘
+                                         │
+                        ⚡ AI Auto-Discovered: EXTENDS
+                                         │
+                                         ▼
+                  ┌──────────────────────────────────────────────┐
+                  │    AGRICULTURE & CROP HYDROLOGY AI (PDF)     │
+                  │    • Soil moisture & crop yield prediction   │
+                  └──────────────────────────────────────────────┘
+```
+
+### Real-World Discovery Examples
+- 📄 **"This research paper is related to your code because it reuses the same Sentinel-1 satellite radar preprocessing script."**
+- 📧 **"This email thread contains the Copernicus API data quota required by your PyTorch U-Net model."**
+- 💬 **"This team chat decision from 6 months ago explains why PyTorch was chosen over TensorFlow."**
 
 ---
 
-## 🖥️ Four Complementary Interface Views
+## 🎨 Four Complementary Interface Views
 
-1. **🕸️ Interactive Canvas Graph Explorer**: Physics-based graph rendering (Coulomb repulsion & Hooke spring attraction) with node filtering by entity type, shortest pathfinder tool, and detail inspector drawer.
-2. **🔍 Subgraph RAG AI Assistant**: Conversational query engine that answers questions across connected papers and code repos with citation badges and inline evidence graphs.
-3. **⏱️ Knowledge Evolution Timeline**: Interactive time scrubber (Sep 2025 – Feb 2026) allowing users to watch how knowledge evolved over time.
-4. **⚡ Relationship Discovery & Insights Hub**: Live feed of AI-discovered links, contradiction detector cards, and project knowledge gap recommendations.
+| View | Purpose | Visual Highlights |
+| :--- | :--- | :--- |
+| **🕸️ Graph Explorer** | Interactive 2D/3D Force Graph | Physics repulsion loop, shortest pathfinder tool, node filtering by type, zoom/pan. |
+| **🔍 RAG AI Assistant** | Conversational Knowledge Query | Subgraph traversal, evidence node citations, confidence metrics, smart prompt chips. |
+| **⏱️ Evolution Timeline** | Temporal Knowledge Scrubbing | Scrub through dates (Sep 2025 – Feb 2026), watch knowledge nodes emerge sequentially. |
+| **⚡ Relationship Hub** | AI Discovered Links & Insights | Discovered links feed with AI reasoning, contradiction detector, and knowledge gap advice. |
 
 ---
 
-## 🚀 Quickstart & Installation
+## 🏗️ Architecture & Multimodal Pipeline
+
+```
+                               ┌────────────────────────────────┐
+                               │     USER INGESTION INTERFACE   │
+                               │  PDF • Chat • Email • GitHub   │
+                               │  Video • Notes • Web Documents │
+                               └───────────────┬────────────────┘
+                                               │
+                                               ▼
+                               ┌────────────────────────────────┐
+                               │  MULTIMODAL PARSER & CLEANER  │
+                               └───────────────┬────────────────┘
+                                               │
+                                               ▼
+                               ┌────────────────────────────────┐
+                               │   AI ENTITY & CONCEPT EXTRACTOR │
+                               │  Topics, Tech, Projects, Dates │
+                               └───────────────┬────────────────┘
+                                               │
+                                               ▼
+                      ┌────────────────────────┴────────────────────────┐
+                      ▼                                                 ▼
+        ┌───────────────────────────┐                     ┌───────────────────────────┐
+        │   VECTOR EMBEDDING INDEX  │                     │   GRAPH DATABASE STORE    │
+        │ TF-IDF / Cosine Similarity│                     │   Nodes & Typed Edges     │
+        └─────────────┬─────────────┘                     └─────────────┬─────────────┘
+                      │                                                 │
+                      └────────────────────────┬────────────────────────┘
+                                               │
+                                               ▼
+                               ┌────────────────────────────────┐
+                               │  AUTO-RELATIONSHIP DISCOVERY   │
+                               │   Implicit Link Discovery Engine│
+                               └────────────────────────────────┘
+```
+
+---
+
+## 🚀 Quickstart Guide
 
 ### Prerequisites
-- Node.js (v18 or higher)
-- npm (v9 or higher)
+- **Node.js** (v18.0 or higher)
+- **npm** (v9.0 or higher)
 
-### Setup Commands
+### Setup & Run Locally
 
 ```bash
-# 1. Clone Repository
+# 1. Clone the repository
 git clone https://github.com/vijaymahes9080/Memory-Graph.git
 cd Memory-Graph
 
-# 2. Install Dependencies
+# 2. Install dependencies
 npm install
 
-# 3. Launch Development Server
+# 3. Start local development server
 npm run dev
+
+# 4. Build production bundle
+npm run build
 ```
 
-Open your browser at `http://localhost:3000`.
+Open `http://localhost:3000` in your browser.
 
 ---
 
-## 🛠️ Tech Stack & Architecture
+## 🧪 Comprehensive Feature Modules
 
-- **Frontend**: React 18, Vite 6, TailwindCSS, Lucide Icons, Canvas Physics Engine.
-- **AI & Vector Core**: TF-IDF Embeddings Engine, Cosine Distance Matrix, BFS Shortest Pathfinder.
-- **Graph Store**: In-Memory Graph Store with JSON, Neo4j Cypher, and Obsidian Markdown export modules.
+- **Voice Memory Engine**: Speech-to-text transcript processing and audio entity extraction.
+- **Taxonomy MindMap View**: Structured domain tree view organizing entities by type.
+- **Graph Analytics Dashboard**: Density metrics, automated link ratios, and type distribution charts.
+- **Visual Pattern Query Builder**: Construct visual pattern match queries `(Doc) -[IMPLEMENTS]-> (Code)`.
+- **Vector Space 2D Projection**: t-SNE / PCA style visual dimensional projection of text embeddings.
+- **Multi-Format Exporter**: Export memory graph to JSON, Cypher (Neo4j), and Obsidian Markdown Vault.
+- **Graph Time Machine**: Capture, label, and compare historical graph snapshots.
 
 ---
 
 ## 📄 License
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+Distributed under the **MIT License** — see [LICENSE](LICENSE) for full details.
 
 ---
 
