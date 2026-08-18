@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200" style="background:#070913; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <linearGradient id="bgGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070913" />
+      <stop offset="50%" stop-color="#140b29" />
+      <stop offset="100%" stop-color="#070913" />
+    </linearGradient>
+
+    <linearGradient id="rainbow1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="50%" stop-color="#a78bfa" />
+      <stop offset="100%" stop-color="#ff007f" />
+    </linearGradient>
+
+    <linearGradient id="cyanNode1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#0077ff" />
+    </linearGradient>
+
+    <linearGradient id="magentaNode1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff007f" />
+      <stop offset="100%" stop-color="#7928ca" />
+    </linearGradient>
+
+    <linearGradient id="emeraldNode1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f5d4" />
+      <stop offset="100%" stop-color="#00a86b" />
+    </linearGradient>
+
+    <linearGradient id="orangeNode1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff8008" />
+      <stop offset="100%" stop-color="#ffc837" />
+    </linearGradient>
+
+    <radialGradient id="gIndigo1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7928ca" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#7928ca" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="gCyan1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#00f2fe" stop-opacity="0" />
+    </radialGradient>
+
+    <pattern id="grid1" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+
+    <filter id="glowFilter1" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1200" fill="url(#bgGrad1)" />
+  <rect width="1200" height="1200" fill="url(#grid1)" />
+
+  <circle cx="300" cy="250" r="350" fill="url(#gIndigo1)" />
+  <circle cx="900" cy="650" r="350" fill="url(#gCyan1)" />
+
+  <!-- HEADER -->
+  <g transform="translate(600, 105)">
+    <rect x="-220" y="-22" width="440" height="32" rx="16" fill="#00f2fe" fill-opacity="0.15" stroke="#00f2fe" stroke-width="1.5" />
+    <text text-anchor="middle" y="-2" fill="#00f2fe" font-size="14" font-weight="800" letter-spacing="3">🧠 MEMORY GRAPH — HERO</text>
+    <text text-anchor="middle" y="52" fill="url(#rainbow1)" font-size="46" font-weight="900">AI Knowledge Infrastructure</text>
+    <text text-anchor="middle" y="88" fill="#e2e8f0" font-size="20" font-weight="500">Don’t store information. Build relationships between it.</text>
+  </g>
+
+  <!-- FRAME GRAPH EXPLORER -->
+  <g transform="translate(100, 240)">
+    <rect width="1000" height="680" rx="20" fill="#11152d" fill-opacity="0.9" stroke="#7928ca" stroke-opacity="0.6" stroke-width="2.5" />
+    <rect width="1000" height="50" rx="20" fill="#090d1f" fill-opacity="0.95" stroke="#1e2a4a" stroke-width="1" />
+    <text x="25" y="31" fill="#00f2fe" font-size="14" font-weight="700">🕸️ Interactive Force Graph Canvas Explorer (200+ FPS)</text>
+
+    <!-- Dots -->
+    <circle cx="930" cy="25" r="7" fill="#ff007f" />
+    <circle cx="955" cy="25" r="7" fill="#ffc837" />
+    <circle cx="980" cy="25" r="7" fill="#00f5d4" />
+
+    <!-- Glowing Edges -->
+    <line x1="220" y1="200" x2="560" y2="180" stroke="#ff007f" stroke-width="3.5" filter="url(#glowFilter1)" />
+    <rect x="345" y="176" width="100" height="24" rx="6" fill="#11152d" stroke="#ff007f" stroke-width="1.5" />
+    <text x="395" y="192" text-anchor="middle" fill="#ff007f" font-size="11" font-weight="800">⚡ IMPLEMENTS</text>
+
+    <line x1="560" y1="180" x2="680" y2="480" stroke="#ff8008" stroke-width="3.5" filter="url(#glowFilter1)" />
+    <rect x="575" y="316" width="90" height="24" rx="6" fill="#11152d" stroke="#ff8008" stroke-width="1.5" />
+    <text x="620" y="332" text-anchor="middle" fill="#ff8008" font-size="11" font-weight="800">⚡ EXTENDS</text>
+
+    <line x1="220" y1="200" x2="320" y2="450" stroke="#00f2fe" stroke-width="3.5" filter="url(#glowFilter1)" />
+    <rect x="225" y="316" width="105" height="24" rx="6" fill="#11152d" stroke="#00f2fe" stroke-width="1.5" />
+    <text x="277" y="332" text-anchor="middle" fill="#00f2fe" font-size="11" font-weight="800">⚡ DEPENDS_ON</text>
+
+    <!-- Nodes -->
+    <g transform="translate(220, 200)">
+      <circle r="40" fill="url(#cyanNode1)" filter="url(#glowFilter1)" />
+      <text text-anchor="middle" y="5" fill="#ffffff" font-size="15" font-weight="900">PDF</text>
+      <text text-anchor="middle" y="62" fill="#00f2fe" font-size="13" font-weight="700">SAR Flood Spec.pdf</text>
+    </g>
+
+    <g transform="translate(560, 180)">
+      <circle r="44" fill="url(#magentaNode1)" filter="url(#glowFilter1)" />
+      <text text-anchor="middle" y="6" fill="#ffffff" font-size="15" font-weight="900">CODE</text>
+      <text text-anchor="middle" y="66" fill="#ff007f" font-size="13" font-weight="700">Flood-Prediction-ML (Repo)</text>
+    </g>
+
+    <g transform="translate(800, 300)">
+      <circle r="34" fill="#7928ca" stroke="#a78bfa" stroke-width="3" filter="url(#glowFilter1)" />
+      <text text-anchor="middle" y="5" fill="#ffffff" font-size="13" font-weight="900">CHAT</text>
+      <text text-anchor="middle" y="54" fill="#a78bfa" font-size="13" font-weight="700">Team Chat Decision</text>
+    </g>
+
+    <g transform="translate(320, 450)">
+      <circle r="32" fill="url(#emeraldNode1)" filter="url(#glowFilter1)" />
+      <text text-anchor="middle" y="5" fill="#ffffff" font-size="13" font-weight="900">DATA</text>
+      <text text-anchor="middle" y="52" fill="#00f5d4" font-size="13" font-weight="700">Copernicus API (Data)</text>
+    </g>
+
+    <g transform="translate(680, 480)">
+      <circle r="38" fill="url(#orangeNode1)" filter="url(#glowFilter1)" />
+      <text text-anchor="middle" y="6" fill="#ffffff" font-size="14" font-weight="900">PAPER</text>
+      <text text-anchor="middle" y="58" fill="#ffc837" font-size="13" font-weight="700">Crop Hydrology (Paper)</text>
+    </g>
+
+    <!-- Pathfinder Strip -->
+    <g transform="translate(40, 615)">
+      <rect width="920" height="44" rx="10" fill="#070913" stroke="#00f2fe" stroke-width="2" />
+      <text x="460" y="27" text-anchor="middle" fill="#00f2fe" font-size="13" font-weight="800">⚡ BFS Shortest Path Discovered: SAR Flood Spec.pdf  ➔  Flood-Prediction-ML  ➔  Crop Hydrology Paper</text>
+    </g>
+  </g>
+
+  <!-- BOTTOM PILLS -->
+  <g transform="translate(600, 975)">
+    <text text-anchor="middle" fill="#ff007f" font-size="15" font-weight="800">⚡ Auto Relationship Discovery   •   🔍 Subgraph RAG   •   ⏱️ Time Scrubbing   •   🕸️ Canvas Physics</text>
+    <text text-anchor="middle" y="50" fill="#00f5d4" font-size="14" font-weight="700">React 18.3   •   TypeScript 5.7   •   Vite 6.1   •   TailwindCSS   •   HTML5 Canvas API   •   TF-IDF Vectors</text>
+  </g>
+</svg>

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200" style="background:#070913; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070913" />
+      <stop offset="50%" stop-color="#140b29" />
+      <stop offset="100%" stop-color="#070913" />
+    </linearGradient>
+    <radialGradient id="orbProd" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff007f" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#ff007f" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="grid3" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="1200" fill="url(#bgGrad3)" />
+  <rect width="1200" height="1200" fill="url(#grid3)" />
+  <circle cx="600" cy="500" r="450" fill="url(#orbProd)" />
+
+  <g transform="translate(600, 105)">
+    <rect x="-240" y="-22" width="480" height="32" rx="16" fill="#ff007f" fill-opacity="0.15" stroke="#ff007f" stroke-width="1.5" />
+    <text text-anchor="middle" y="-2" fill="#ff007f" font-size="14" font-weight="800" letter-spacing="3">REAL APPLICATION CAPABILITIES</text>
+    <text text-anchor="middle" y="52" fill="#ffffff" font-size="42" font-weight="900">Memory Graph in Action</text>
+    <text text-anchor="middle" y="88" fill="#e2e8f0" font-size="19" font-weight="500">Engineered &amp; Tested Feature Modules</text>
+  </g>
+
+  <!-- 2x2 QUAD MODULE GRID -->
+  <g transform="translate(100, 240)">
+    <!-- Card 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="475" height="240" rx="16" fill="#11152d" stroke="#6366f1" stroke-width="2.5" />
+      <rect width="475" height="6" rx="3" fill="#6366f1" />
+      <text x="30" y="50" fill="#ffffff" font-size="21" font-weight="800">🔍 RAG AI Assistant</text>
+      <text x="30" y="92" fill="#94a3b8" font-size="15">Answers complex natural language queries by</text>
+      <text x="30" y="118" fill="#94a3b8" font-size="15">traversing subgraphs and outputting citations.</text>
+      <rect x="30" y="170" width="140" height="32" rx="8" fill="#6366f1" fill-opacity="0.2" stroke="#6366f1" stroke-width="1.5" />
+      <text x="100" y="191" text-anchor="middle" fill="#818cf8" font-size="12" font-weight="800">VIEW MODULE</text>
+    </g>
+
+    <!-- Card 2 -->
+    <g transform="translate(525, 0)">
+      <rect width="475" height="240" rx="16" fill="#11152d" stroke="#00f2fe" stroke-width="2.5" />
+      <rect width="475" height="6" rx="3" fill="#00f2fe" />
+      <text x="30" y="50" fill="#ffffff" font-size="21" font-weight="800">⏱️ Evolution Timeline</text>
+      <text x="30" y="92" fill="#94a3b8" font-size="15">Time-scrubbing animation tracking node and edge</text>
+      <text x="30" y="118" fill="#94a3b8" font-size="15">emergence from Sep 2025 to Feb 2026.</text>
+      <rect x="30" y="170" width="140" height="32" rx="8" fill="#00f2fe" fill-opacity="0.2" stroke="#00f2fe" stroke-width="1.5" />
+      <text x="100" y="191" text-anchor="middle" fill="#00f2fe" font-size="12" font-weight="800">VIEW MODULE</text>
+    </g>
+
+    <!-- Card 3 -->
+    <g transform="translate(0, 280)">
+      <rect width="475" height="240" rx="16" fill="#11152d" stroke="#ff007f" stroke-width="2.5" />
+      <rect width="475" height="6" rx="3" fill="#ff007f" />
+      <text x="30" y="50" fill="#ffffff" font-size="21" font-weight="800">⚡ Auto Discovery Hub</text>
+      <text x="30" y="92" fill="#94a3b8" font-size="15">Live feed of AI-discovered implicit links,</text>
+      <text x="30" y="118" fill="#94a3b8" font-size="15">contradiction alerts &amp; knowledge gap advice.</text>
+      <rect x="30" y="170" width="140" height="32" rx="8" fill="#ff007f" fill-opacity="0.2" stroke="#ff007f" stroke-width="1.5" />
+      <text x="100" y="191" text-anchor="middle" fill="#ff007f" font-size="12" font-weight="800">VIEW MODULE</text>
+    </g>
+
+    <!-- Card 4 -->
+    <g transform="translate(525, 280)">
+      <rect width="475" height="240" rx="16" fill="#11152d" stroke="#00f5d4" stroke-width="2.5" />
+      <rect width="475" height="6" rx="3" fill="#00f5d4" />
+      <text x="30" y="50" fill="#ffffff" font-size="21" font-weight="800">📊 Graph Analytics</text>
+      <text x="30" y="92" fill="#94a3b8" font-size="15">Quantitative density metrics, link-to-node ratios,</text>
+      <text x="30" y="118" fill="#94a3b8" font-size="15">and entity distribution charts.</text>
+      <rect x="30" y="170" width="140" height="32" rx="8" fill="#00f5d4" fill-opacity="0.2" stroke="#00f5d4" stroke-width="1.5" />
+      <text x="100" y="191" text-anchor="middle" fill="#00f5d4" font-size="12" font-weight="800">VIEW MODULE</text>
+    </g>
+  </g>
+
+  <!-- IMPACT & CREDENTIALS -->
+  <g transform="translate(100, 820)">
+    <rect width="1000" height="135" rx="16" fill="#090d1f" stroke="#7928ca" stroke-width="2" />
+    <text x="500" y="42" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="800">REAL-WORLD IMPACT STATEMENT</text>
+    <text x="500" y="75" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="500">Designed to eliminate personal knowledge fragmentation by converting isolated files into an</text>
+    <text x="500" y="102" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="500">interconnected, client-side AI memory network — with zero server cost and total privacy.</text>
+  </g>
+
+  <g transform="translate(600, 1000)">
+    <text text-anchor="middle" fill="#00f2fe" font-size="16" font-weight="800">GitHub Repository: https://github.com/vijaymahes9080/Memory-Graph.git</text>
+    <text text-anchor="middle" y="32" fill="#94a3b8" font-size="14">Author: Vijay Mahes • Vijaypradhap2004@gmail.com</text>
+  </g>
+</svg>

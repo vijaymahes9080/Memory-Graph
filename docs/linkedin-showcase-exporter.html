@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Memory Graph — LinkedIn Visual Graphic Studio & PNG Exporter</title>
+  <style>
+    body {
+      background-color: #0a0e1a;
+      color: #e2e8f0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+    p.subtitle {
+      color: #94a3b8;
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+    .btn-group {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 40px;
+    }
+    button {
+      background: linear-gradient(135deg, #6366f1, #4f46e5);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);
+      transition: all 0.2s ease;
+    }
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(99, 102, 241, 0.6);
+    }
+    .preview-container {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      width: 100%;
+      max-width: 1000px;
+      align-items: center;
+    }
+    .preview-card {
+      background: #151d33;
+      border: 1px solid #1e2a4a;
+      border-radius: 16px;
+      padding: 24px;
+      width: 100%;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .preview-card h3 {
+      margin-top: 0;
+      color: #818cf8;
+    }
+    img.graphic-preview {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body>
+  <h1>🧠 Memory Graph — LinkedIn Visual Graphic Studio</h1>
+  <p class="subtitle">100% Client-Side Vector Visuals &amp; Instant High-Resolution PNG Exporter</p>
+
+  <div class="btn-group">
+    <button onclick="downloadPNG('docs/images/linkedin-full-project-showcase.svg', 'linkedin-full-project-showcase.png')">📥 Download Full Infographic image.png</button>
+    <button onclick="downloadPNG('docs/images/linkedin-slide1-hero.svg', 'linkedin-slide1-hero.png')">📸 Download Slide 1 PNG</button>
+    <button onclick="downloadPNG('docs/images/linkedin-slide2-architecture.svg', 'linkedin-slide2-architecture.png')">📸 Download Slide 2 PNG</button>
+    <button onclick="downloadPNG('docs/images/linkedin-slide3-product.svg', 'linkedin-slide3-product.png')">📸 Download Slide 3 PNG</button>
+  </div>
+
+  <div class="preview-container">
+    <div class="preview-card">
+      <h3>🖼️ Master Full Project Infographic (1200 × 2400 px)</h3>
+      <img class="graphic-preview" src="images/linkedin-full-project-showcase.svg" alt="Full Project Visual Infographic" />
+    </div>
+
+    <div class="preview-card">
+      <h3>📸 Slide 1: Hero — What I Built (1200 × 1200 px)</h3>
+      <img class="graphic-preview" src="images/linkedin-slide1-hero.svg" alt="Slide 1 Hero" />
+    </div>
+
+    <div class="preview-card">
+      <h3>📸 Slide 2: Architecture — How It Works (1200 × 1200 px)</h3>
+      <img class="graphic-preview" src="images/linkedin-slide2-architecture.svg" alt="Slide 2 Architecture" />
+    </div>
+
+    <div class="preview-card">
+      <h3>📸 Slide 3: Product — Real Capabilities (1200 × 1200 px)</h3>
+      <img class="graphic-preview" src="images/linkedin-slide3-product.svg" alt="Slide 3 Product" />
+    </div>
+  </div>
+
+  <script>
+    function downloadPNG(svgPath, filename) {
+      const img = new Image();
+      img.crossOrigin = 'anonymous';
+      img.onload = function() {
+        const canvas = document.createElement('canvas');
+        canvas.width = img.width || 1200;
+        canvas.height = img.height || 2400;
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(img, 0, 0);
+        const a = document.createElement('a');
+        a.download = filename;
+        a.href = canvas.toDataURL('image/png');
+        a.click();
+      };
+      img.src = svgPath;
+    }
+  </script>
+</body>
+</html>

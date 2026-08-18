@@ -25,6 +25,23 @@ An AI-powered operating system for personal knowledge that continuously ingests 
 
 ---
 
+## 🎨 LinkedIn Multi-Image Showcase & Full Visual Graphics
+
+<p align="center">
+  <img src="docs/images/linkedin-full-project-showcase.svg" alt="Memory Graph Full Project Visual Infographic Image" width="100%" />
+</p>
+
+<p align="center"><em>Figure — Full Project Visual Infographic Showcase (`docs/images/linkedin-full-project-showcase.svg`)</em></p>
+
+### 📸 LinkedIn Engineering Carousel Slides (1200 × 1200 px)
+
+| Slide 1 — Hero | Slide 2 — Architecture | Slide 3 — Product Capabilities |
+|:---:|:---:|:---:|
+| <img src="docs/images/linkedin-slide1-hero.svg" width="100%" /> | <img src="docs/images/linkedin-slide2-architecture.svg" width="100%" /> | <img src="docs/images/linkedin-slide3-product.svg" width="100%" /> |
+| **What I Built** | **How It Works** | **What It Can Do** |
+
+---
+
 ## The Vision: Everything Becomes Connected
 
 Traditional apps store information as isolated files. Memory Graph continuously extracts **People, Topics, Projects, Technologies, Concepts, Datasets, and Dates**, then connects them into a living memory network.
