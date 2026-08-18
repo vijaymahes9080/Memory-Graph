@@ -1,204 +1,319 @@
 # 🚀 Memory Graph — LinkedIn Engineering Showcase (3-Image Carousel)
 
-*Professional LinkedIn Product Showcase based 100% on the verified codebase of **Memory Graph** ([https://github.com/vijaymahes9080/Memory-Graph.git](https://github.com/vijaymahes9080/Memory-Graph.git)).*
+*A professional, engineering-first 3-image LinkedIn carousel showcase built 100% faithful to the verified codebase of **Memory Graph** ([https://github.com/vijaymahes9080/Memory-Graph.git](https://github.com/vijaymahes9080/Memory-Graph.git)).*
 
 ---
 
-## 🔍 STEP 1 — FULL PROJECT ANALYSIS (Verified from Repository)
+## 🔍 STEP 1 — FULL PROJECT ANALYSIS (Verified from Codebase)
 
 ### 1. What problem does this project solve?
-Traditional knowledge management systems store information as isolated, disconnected files (PDFs, GitHub code repos, email threads, chat transcripts). **Memory Graph** solves information fragmentation by continuously ingesting unstructured multimodal sources, extracting entity types, and automatically discovering hidden cross-source relationships using vector embeddings and semantic similarity.
+Personal and organizational knowledge is heavily fragmented across isolated silos — research PDFs, GitHub repositories, team chat transcripts, email threads, voice notes, and documentation. Traditional search tools rely on rigid keyword lookups and fail to identify how code in one repository implements an algorithm described in an academic paper, or how a team decision from six months ago connects to a newly ingested dataset. 
 
-### 2. What did I actually build?
-A high-performance Web Application (**Memory Graph — AI Knowledge Infrastructure**) featuring:
-- **Interactive Physics Canvas Graph Explorer**: 2D/3D force simulation (Coulomb repulsion & Hooke spring attraction) with node filtering and shortest pathfinder.
-- **Continuous AI Relationship Discovery Engine**: TF-IDF vector embeddings & cosine distance calculator auto-generating typed relationships (`IMPLEMENTS`, `SAME_TOPIC`, `EXTENDS`, `REFERENCES`, `DEPENDS_ON`).
-- **RAG AI Subgraph Traversal Assistant**: Conversational reasoning query engine returning connected knowledge narratives, citation badges, and evidence subgraphs.
-- **Knowledge Evolution Timeline**: Time-scrubbing interface tracking temporal growth of knowledge nodes across dates.
-- **Taxonomy MindMap & Analytics Dashboard**: Hierarchical domain tree & quantitative density analytics.
-- **Multi-Format Export Engine**: JSON, Neo4j Cypher, and Obsidian Markdown Vault format exporter.
-
-### 3. What are the strongest implemented features?
-1. **Interactive Physics Graph Explorer** (`src/components/GraphExplorer.tsx`): Real-time canvas rendering, shortest pathfinder BFS algorithm, zoom/pan/fit, and node focus drawer.
-2. **Auto-Relationship Discovery Pipeline** (`src/services/memoryEngine.ts`): Scans newly ingested nodes against existing memory graph, computes TF-IDF similarity, and auto-generates typed edges with confidence scores and reasoning.
-3. **RAG Subgraph Traversal Engine** (`src/services/memoryEngine.ts` & `src/components/AiAssistantView.tsx`): Answers natural language queries by traversing connected subgraphs, highlighting evidence nodes, and calculating RAG confidence scores.
-4. **Knowledge Evolution Timeline** (`src/components/TimelineView.tsx`): Time scrubbing interface with play/pause animations showing how ideas evolved over time.
-5. **Taxonomy MindMap & Graph Analytics** (`src/components/MindMapView.tsx` & `src/components/AnalyticsView.tsx`): Structured domain tree and quantitative connectivity metrics.
-
-### 4. What technologies are actually used?
-- **Frontend**: React 18.3, Vite 6.1, TailwindCSS 3.4, Lucide Icons, Canvas API.
-- **Languages**: TypeScript 5.7, JavaScript (ESNext), HTML5, CSS3.
-- **AI/Math Core**: TF-IDF Embeddings Matrix, Cosine Distance Calculator, BFS Shortest Pathfinder Algorithm.
-- **Package Manager & Tooling**: Node.js 24, npm 11, PostCSS, Autoprefixer, Git, GitHub Actions.
-
-### 5. What is the actual architecture?
-`Client Ingestion Interface` ➔ `Multimodal Text/Code Parser` ➔ `Entity Extractor` ➔ `TF-IDF & Cosine Similarity Matrix` ➔ `Graph & Edge Store` ➔ `4 Presentation Views` (Graph Explorer, RAG AI Assistant, Evolution Timeline, Relationship Discovery Hub).
-
-### 6. What makes this project technically interesting?
-- **Zero-Dependency In-Memory Vector Engine**: Performs TF-IDF tokenization and cosine similarity distance calculations directly in TypeScript runtime.
-- **BFS Shortest Pathfinder**: Traverses complex multi-hop node paths to illustrate how any two distant concepts or repos connect.
-- **Hybrid Knowledge Engine**: Merges graph traversal algorithms with vector retrieval to synthesize RAG answers with citations.
-
-### 7. Verified URLs & Author Details
-- **GitHub Repository**: `https://github.com/vijaymahes9080/Memory-Graph.git`
-- **Author**: Vijay Mahes
-- **Email**: `Vijaypradhap2004@gmail.com`
+**Memory Graph** solves information fragmentation by continuously ingesting unstructured multimodal sources, extracting entity types, calculating TF-IDF vector embeddings and cosine distances, and automatically discovering hidden cross-source relationships to build a unified, living memory network — operating 100% client-side without external AI APIs or backend servers.
 
 ---
 
-# 🎨 LINKEDIN CAROUSEL SLIDE SPECIFICATIONS
+### 2. What did I actually build?
+A high-performance client-side Web Application (**Memory Graph — AI Knowledge Infrastructure**) built with React 18.3, TypeScript 5.7, Vite 6.1, and TailwindCSS 3.4. 
+
+Key core modules include:
+- **Interactive Physics Canvas Graph Explorer** ([GraphExplorer.tsx](file:///d:/intership/mem/src/components/GraphExplorer.tsx)): 2D force simulation engine using Coulomb repulsion and Hooke spring attraction, featuring shortest pathfinder (BFS), entity filtering, zoom/pan/fit controls, and node drawer.
+- **Continuous AI Relationship Discovery Engine** ([memoryEngine.ts](file:///d:/intership/mem/src/services/memoryEngine.ts)): Vector similarity calculator using TF-IDF term tokenization and cosine distance matrix evaluation to discover implicit relationships (`IMPLEMENTS`, `SAME_TOPIC`, `EXTENDS`, `DEPENDS_ON`, `MENTIONS`) with confidence scores.
+- **RAG Subgraph Traversal Assistant** ([AiAssistantView.tsx](file:///d:/intership/mem/src/components/AiAssistantView.tsx)): Conversational knowledge query interface that traverses connected subgraphs to answer complex queries, outputting evidence nodes, citations, and confidence metrics.
+- **Knowledge Evolution Timeline** ([TimelineView.tsx](file:///d:/intership/mem/src/components/TimelineView.tsx)): Time-scrubbing animation controller showing temporal node emergence across historic dates (Sep 2025 – Feb 2026).
+- **Taxonomy MindMap & Analytics** ([MindMapView.tsx](file:///d:/intership/mem/src/components/MindMapView.tsx) & [AnalyticsView.tsx](file:///d:/intership/mem/src/components/AnalyticsView.tsx)): Hierarchical entity tree and quantitative density metrics (nodes, edges, average degree, link ratio).
+- **Multi-Format Export Engine** ([exportImportEngine.ts](file:///d:/intership/mem/src/services/exportImportEngine.ts)): Data exporter for JSON graphs, Neo4j Cypher scripts, and Obsidian Markdown Vaults.
+
+---
+
+### 3. What are the strongest implemented features?
+1. **Zero-Backend In-Browser Vector Engine** ([memoryEngine.ts](file:///d:/intership/mem/src/services/memoryEngine.ts#L147-L225)): Tokenizes raw documents and computes TF-IDF frequency matrices and cosine similarity scores inside the browser TypeScript runtime without external API keys.
+2. **BFS Shortest Pathfinder Algorithm** ([memoryEngine.ts](file:///d:/intership/mem/src/services/memoryEngine.ts#L66-L102)): Evaluates queue-based Breadth-First Search across connected edges to find the shortest hop path between any two distant entities.
+3. **Interactive 2D Canvas Force Simulation** ([GraphExplorer.tsx](file:///d:/intership/mem/src/components/GraphExplorer.tsx#L120-L240)): Custom HTML5 Canvas renderer calculating multi-body electrostatic repulsion and spring tension at real-time frame rates.
+4. **Subgraph RAG Query Traversal** ([AiAssistantView.tsx](file:///d:/intership/mem/src/components/AiAssistantView.tsx#L50-L110)): Merges vector retrieval with topological graph traversal to generate structured natural language answers supported by verified citation badges.
+5. **Temporal Knowledge Time Scrubber** ([TimelineView.tsx](file:///d:/intership/mem/src/components/TimelineView.tsx#L40-L120)): Allows users to play, pause, and scrub through dates to visualize how the knowledge network expanded over time.
+
+---
+
+### 4. What technologies are actually used?
+- **Frontend Framework**: React `^18.3.1`, TypeScript `^5.7.3`, Vite `^6.1.0`
+- **Styling**: TailwindCSS `^3.4.17`, PostCSS `^8.5.2`, Autoprefixer `^10.4.20`, `clsx`, `tailwind-merge`
+- **Icons & Graphics**: Lucide React `^0.475.0`, HTML5 Canvas 2D API
+- **Algorithms**: TF-IDF Embeddings, Cosine Distance Matrix, Breadth-First Search (BFS), Coulomb Repulsion & Hooke's Law Physics
+- **Dev & Test Infrastructure**: Node.js v24, npm, Vitest / Canvas (`canvas ^3.2.3`)
+
+---
+
+### 5. What is the actual architecture?
+```
+┌────────────────────────────────────────────────────────────────────────┐
+│                        MULTIMODAL INGESTION LAYER                      │
+│        PDF Documents · GitHub Repos · Emails · Chat · Voice · Notes    │
+└───────────────────────────────────┬────────────────────────────────────┘
+                                    │
+                                    ▼
+┌────────────────────────────────────────────────────────────────────────┐
+│                   MULTIMODAL PARSER & ENTITY EXTRACTOR                 │
+│      Extracts 11 Entity Types & Normalizes Document Tokens             │
+└───────────────────────────────────┬────────────────────────────────────┘
+                                    │
+                                    ▼
+┌────────────────────────────────────────────────────────────────────────┐
+│                   IN-MEMORY TF-IDF VECTOR ENGINE                       │
+│    Term Frequency Matrix · Inverse Document Frequency · Cosine Similarity│
+└───────────────────────────────────┬────────────────────────────────────┘
+                                    │
+                                    ▼
+┌────────────────────────────────────────────────────────────────────────┐
+│                     AUTO-RELATIONSHIP DISCOVERY                        │
+│    Generates Typed Edges (IMPLEMENTS / EXTENDS / DEPENDS_ON / MENTIONS) │
+└───────────────────────────────────┬────────────────────────────────────┘
+                                    │
+                                    ▼
+┌────────────────────────────────────────────────────────────────────────┐
+│                        PRESENTATION MODULES                            │
+│ 🕸️ Canvas Graph Explorer | 🔍 RAG AI Search | ⏱️ Timeline | 📊 Analytics│
+└────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+### 6. What makes this project technically interesting?
+- **100% Client-Side Privacy & Execution**: Zero cloud server reliance or third-party AI LLM API costs. All entity extractions, vector comparisons, and physics calculations execute directly inside the user's browser runtime.
+- **Deterministic RAG Subgraph Traversal**: Rather than returning hallucinated responses, query results are mathematically grounded by BFS multi-hop subgraph paths and explicit entity evidence nodes.
+- **Multi-Format Graph Interoperability**: Generates raw Neo4j Cypher (`CREATE (n:Entity ...)`) and Obsidian vault markdown files with `[[wikilinks]]`.
+
+---
+
+### 7. Verified Repository Details
+- **GitHub Repository**: `https://github.com/vijaymahes9080/Memory-Graph.git`
+- **Author**: Vijay Mahes
+- **Contact Email**: `Vijaypradhap2004@gmail.com`
+
+---
+
+# 🎨 LINKEDIN CAROUSEL SLIDE SPECIFICATIONS (1200 × 1200 px)
 
 ---
 
 ## 🖼️ IMAGE 1 — HERO / WHAT I BUILT
 
 ### Purpose
-Immediately communicate: **What did I build and why does it matter?**
+Immediately capture developer and product engineering attention by answering:
+> **What did I build and why does it matter?**
 
-### Layout Structure (1200 × 1200 px)
+---
+
+### Visual Layout Blueprint (1200 × 1200 px)
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
+│ SAFE MARGIN TOP (100px)                                                │
 │                                                                        │
-│  [TOP BRANDING STRIP]                                                  │
 │  🧠 MEMORY GRAPH                                                       │
-│  An AI-Powered Operating System for Personal Knowledge                 │
+│  AI Knowledge Infrastructure — Don't store information. Connect it.    │
 │                                                                        │
 ├────────────────────────────────────────────────────────────────────────┤
 │                                                                        │
-│  [MAIN VISUAL — APPLICATION CANVAS GRAPH EXPLORER]                     │
+│  [MAIN VISUAL — REAL APPLICATION GRAPH EXPLORER CANVAS UI]             │
 │  ┌──────────────────────────────────────────────────────────────────┐  │
-│  │  🕸️ Interactive Physics Node Canvas                              │  │
-│  │  • Nodes: Disaster Command PDF ↔ Flood ML Repo ↔ Sentinel Radar   │  │
-│  │  • Glowing Edges: IMPLEMENTS • SAME_TOPIC • DEPENDS_ON           │  │
-│  │  • Pathfinder: Shortest path between PDF blueprint & PyTorch     │  │
+│  │ 🕸️ Force-Directed Node Graph                                     │  │
+│  │                                                                  │  │
+│  │        (SAR Flood Spec.pdf) ──IMPLEMENTS──> (U-Net Model.py)     │  │
+│  │                 │                                     │          │  │
+│  │             DEPENDS_ON                             EXTENDS       │  │
+│  │                 ▼                                     ▼          │  │
+│  │        (Copernicus API)                      (Crop Hydrology)    │  │
+│  │                                                                  │  │
+│  │ [Shortest Path Highlighted: PDF ➔ U-Net ➔ Hydrology Paper]       │  │
 │  └──────────────────────────────────────────────────────────────────┘  │
 │                                                                        │
 ├────────────────────────────────────────────────────────────────────────┤
 │                                                                        │
 │  [BOTTOM FEATURE HIGHLIGHT STRIP]                                      │
-│  ⚡ AI Relationship Discovery | 🔍 Subgraph RAG | ⏱️ Time Scrubbing    │
+│  ⚡ Auto Relationship Discovery | 🔍 Subgraph RAG | ⏱️ Time Scrubbing   │
 │                                                                        │
 │  [TECHNOLOGY STRIP]                                                    │
-│  React 18  |  TypeScript 5.7  |  Vite 6  |  TailwindCSS  |  Canvas API  │
+│  React 18 | TypeScript 5.7 | Vite 6 | TailwindCSS | HTML5 Canvas | TF-IDF│
 │                                                                        │
+│ SAFE MARGIN BOTTOM (100px)                                             │
 └────────────────────────────────────────────────────────────────────────┘
 ```
 
-### Visual & Copy Content
-- **Headline**: `MEMORY GRAPH`
-- **Sub-headline**: `An AI-Powered Operating System for Personal Knowledge`
-- **Main Visual**: Interactive Force-Directed Canvas Graph Explorer displaying connected nodes (`AI Disaster Command Center.pdf`, `Flood-Prediction-ML Repo`, `Sentinel-1 Radar Telemetry`, `Agriculture Hydrology Paper`).
-- **Feature Pills**: `⚡ Auto Discovery | 🔍 Subgraph RAG | ⏱️ Time Machine | 🕸️ Force Graph`
-- **Tech Stack Strip**: `React 18 | TypeScript 5.7 | Vite 6 | TailwindCSS | Canvas API`
+---
+
+### Visual & Copy Elements
+
+- **Header Tag**: `MEMORY GRAPH` (Font: Bold Sans-Serif, Accent Color: Indigo Glow `#818cf8`)
+- **Headline Statement**: `AI Knowledge Infrastructure — Don't store information. Build relationships between it.`
+- **Central Visual Element**: The actual **Force-Directed Graph Explorer UI** featuring node clusters (`SAR Flood Spec.pdf`, `Flood-Prediction-ML Repo`, `Copernicus API`, `Crop Hydrology AI`) connected by glowing relationship vectors (`IMPLEMENTS`, `EXTENDS`, `DEPENDS_ON`).
+- **Feature Capability Pills**:
+  - `⚡ AI Relationship Discovery`
+  - `🔍 Subgraph RAG Search`
+  - `⏱️ Temporal Time Scrubber`
+  - `🕸️ Canvas Physics Simulation`
+- **Technology Strip**:
+  - `React 18.3` | `TypeScript 5.7` | `Vite 6.1` | `TailwindCSS` | `Canvas API` | `TF-IDF Vector Engine`
+
+---
+
+### Internal Selection Rationale
+*Selected because the Hero slide must establish instant credibility with engineering leads. Displaying the physics graph canvas alongside real technology badges immediately identifies this project as a deeply built, technical client-side application rather than a superficial wrapper.*
 
 ---
 
 ## 🖼️ IMAGE 2 — ARCHITECTURE / HOW IT WORKS
 
 ### Purpose
-Answer: **How does this project actually work under the hood?**
+Provide transparent engineering depth by answering:
+> **How does this project actually work under the hood?**
 
-### Layout Structure (1200 × 1200 px)
+---
+
+### Visual Layout Blueprint (1200 × 1200 px)
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
+│ SAFE MARGIN TOP (100px)                                                │
 │                                                                        │
-│  [HEADER]                                                              │
 │  SYSTEM ARCHITECTURE & MULTIMODAL PIPELINE                             │
-│  How Memory Graph Continuously Ingests & Connects Knowledge            │
+│  Zero-Backend, 100% Client-Side Knowledge Engine                       │
 │                                                                        │
 ├────────────────────────────────────────────────────────────────────────┤
 │                                                                        │
-│  [PIPELINE FLOW DIAGRAM]                                               │
+│  [PIPELINE FLOW]                                                       │
 │                                                                        │
-│  [1. INGESTION]      PDF • Chat • Email • GitHub Repos • Notes       │
-│                             │                                          │
-│                             ▼                                          │
-│  [2. EXTRACTION]     AI Entity Recognizer & Tokenizer                  │
-│                             │                                          │
-│                             ▼                                          │
-│  [3. VECTOR INDEX]   TF-IDF Embeddings & Cosine Distance Matrix        │
-│                             │                                          │
-│                             ▼                                          │
-│  [4. DISCOVERY]      Auto-Generates Typed Edges (IMPLEMENTS / EXTENDS) │
-│                             │                                          │
-│                             ▼                                          │
-│  [5. PRESENTATION]   Graph Explorer • RAG Search • Timeline Scrubber   │
+│  ┌───────────────────────────┐      ┌───────────────────────────┐      │
+│  │ 1. INGESTION              │ ───► │ 2. ENTITY EXTRACTION      │      │
+│  │ PDFs, Code, Chat, Emails  │      │ 11 Entity Types Tokenized │      │
+│  └───────────────────────────┘      └─────────────┬─────────────┘      │
+│                                                   │                    │
+│                                                   ▼                    │
+│  ┌───────────────────────────┐      ┌───────────────────────────┐      │
+│  │ 4. AUTO DISCOVERY ENGINE  │ ◄─── │ 3. TF-IDF VECTOR MATRIX   │      │
+│  │ Typed Edges & Confidence  │      │ Cosine Distance Calculator│      │
+│  └─────────────┬─────────────┘      └───────────────────────────┘      │
+│                │                                                       │
+│                ▼                                                       │
+│  ┌───────────────────────────────────────────────────────────────┐     │
+│  │ 5. PRESENTATION MODULES                                       │     │
+│  │ Graph Explorer · RAG Assistant · Timeline · Analytics Dashboard│     │
+│  └───────────────────────────────────────────────────────────────┘     │
 │                                                                        │
 ├────────────────────────────────────────────────────────────────────────┤
 │                                                                        │
 │  [VERIFIED TECHNICAL CAPABILITIES]                                     │
-│  ✔ In-Memory Vector Search     ✔ BFS Shortest Pathfinder Algorithm     │
-│  ✔ Subgraph RAG Reasoning      ✔ Neo4j & Obsidian Vault Export         │
+│  ✔ In-Memory Vector Search          ✔ BFS Shortest Pathfinder Algorithm│
+│  ✔ Subgraph RAG Reasoning           ✔ Neo4j & Obsidian Vault Export    │
+│  ✔ 100% Browser Native Execution    ✔ Zero External API Dependencies   │
 │                                                                        │
+│ SAFE MARGIN BOTTOM (100px)                                             │
 └────────────────────────────────────────────────────────────────────────┘
 ```
 
-### Visual & Copy Content
-- **Header**: `SYSTEM ARCHITECTURE & PIPELINE`
-- **Sub-header**: `Verified Data Flow & AI Processing Engine`
-- **5 Pipeline Steps**:
-  1. `1. INGESTION`: PDF • DOCX • GitHub Repos • Emails • Chat • Audio
-  2. `2. EXTRACTION`: AI Entity Recognizer & Multimodal Text Tokenizer
-  3. `3. VECTOR INDEX`: TF-IDF Embeddings & Cosine Distance Matrix
-  4. `4. DISCOVERY`: Auto-Generates Typed Edges (IMPLEMENTS / EXTENDS)
-  5. `5. VIEWS`: Canvas Physics Graph • RAG AI Search • Timeline Scrubber
-- **Technical Capabilities Grid**:
-  - `✔ Zero-Dependency Vector Search`: In-browser cosine distance calculation
-  - `✔ BFS Shortest Pathfinder`: Multi-hop traversal algorithm
+---
+
+### Visual & Copy Elements
+
+- **Header Tag**: `SYSTEM ARCHITECTURE & PIPELINE`
+- **Sub-headline**: `Verified Data Flow & Client-Side Processing Engine`
+- **5-Stage Data Pipeline**:
+  1. `1. INGESTION`: Raw content parsing (PDFs, GitHub Repos, Team Chat, Emails, Voice, Notes).
+  2. `2. EXTRACTION`: AI Entity Recognizer categorizing 11 distinct entity types (`PROJECT`, `DOCUMENT`, `CODE`, `TECHNOLOGY`, `PERSON`, `DATASET`, etc.).
+  3. `3. VECTOR INDEX`: TF-IDF Frequency Matrix & Cosine Distance Similarity Engine.
+  4. `4. DISCOVERY`: Implicit relationship generator outputting typed edges (`IMPLEMENTS`, `EXTENDS`, `DEPENDS_ON`) with confidence scores (e.g. 94% match).
+  5. `5. VIEWS`: Presentation runtime (Canvas Graph Explorer, RAG Search, Evolution Timeline, Analytics).
+- **Verified Capabilities Grid**:
+  - `✔ In-Memory Vector Search`: Token frequency & cosine similarity inside browser runtime.
+  - `✔ BFS Shortest Pathfinder`: Queue-based pathfinder traversing multi-hop graph nodes.
+  - `✔ Subgraph RAG Engine`: Natural language context synthesis backed by evidence citations.
+  - `✔ Multi-Format Exporter`: Exports graph schemas to Neo4j Cypher and Obsidian Markdown.
+
+---
+
+### Internal Selection Rationale
+*Selected because technical hiring managers and senior architects evaluate projects based on data flow and algorithmic rigor. Illustrating the exact 5-stage pipeline proves that the auto-discovery engine and vector similarity matrix are fully engineered concepts.*
 
 ---
 
 ## 🖼️ IMAGE 3 — REAL PRODUCT / FEATURES / IMPACT
 
 ### Purpose
-Answer: **What can the finished application actually do?**
+Demonstrate practical utility and application polish by answering:
+> **What can the finished application actually do?**
 
-### Layout Structure (1200 × 1200 px)
+---
+
+### Visual Layout Blueprint (1200 × 1200 px)
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
+│ SAFE MARGIN TOP (100px)                                                │
 │                                                                        │
-│  [HEADER]                                                              │
 │  REAL APPLICATION CAPABILITIES & IMPACT                                │
-│  Memory Graph in Action                                                │
+│  Four Core Interface Viewports Engine                                  │
 │                                                                        │
 ├────────────────────────────────────────────────────────────────────────┤
 │                                                                        │
-│  [QUAD SCREENSHOT MATRIX]                                              │
+│  [2 × 2 FEATURE SHOWCASE MATRIX]                                       │
 │                                                                        │
-│  ┌─────────────────────────────┐  ┌─────────────────────────────┐  │
-│  │ 🔍 RAG AI ASSISTANT         │  │ ⏱️ EVOLUTION TIMELINE       │  │
-│  │ Subgraph reasoning & RAG    │  │ Time scrubbing Sep-Feb      │  │
-│  │ evidence citations          │  │ node emergence animation    │  │
-│  └─────────────────────────────┘  └─────────────────────────────┘  │
-│  ┌─────────────────────────────┐  ┌─────────────────────────────┐  │
-│  │ ⚡ RELATIONSHIP DISCOVERY   │  │ 📊 GRAPH ANALYTICS          │  │
-│  │ AI-discovered link feed     │  │ Density metrics & entity    │  │
-│  │ & contradiction detector    │  │ breakdown charts            │  │
-│  └─────────────────────────────┘  └─────────────────────────────┘  │
+│  ┌─────────────────────────────┐    ┌─────────────────────────────┐    │
+│  │ 🔍 RAG AI ASSISTANT         │    │ ⏱️ EVOLUTION TIMELINE       │    │
+│  │ Natural language queries    │    │ Time scrubbing animation    │    │
+│  │ with subgraph citations.    │    │ tracking knowledge emergence│    │
+│  └─────────────────────────────┘    └─────────────────────────────┘    │
+│                                                                        │
+│  ┌─────────────────────────────┐    ┌─────────────────────────────┐    │
+│  │ ⚡ RELATIONSHIP DISCOVERY   │    │ 📊 GRAPH ANALYTICS          │    │
+│  │ AI link feed &              │    │ Density metrics & entity    │    │
+│  │ contradiction detection.    │    │ distribution charts.        │    │
+│  └─────────────────────────────┘    └─────────────────────────────┘    │
 │                                                                        │
 ├────────────────────────────────────────────────────────────────────────┤
 │                                                                        │
-│  [IMPACT STATEMENT]                                                    │
-│  Designed to simplify personal knowledge fragmentation by converting   │
-│  isolated files into an interconnected AI memory network.              │
+│  [REAL IMPACT STATEMENT]                                               │
+│  Designed to eliminate personal knowledge fragmentation by converting  │
+│  isolated files into an interconnected client-side AI memory network.  │
 │                                                                        │
-│  [LINKS & CREDENTIALS]                                                 │
-│  GitHub Repository: https://github.com/vijaymahes9080/Memory-Graph.git │
+│  [VERIFIED CREDENTIALS & LINKS]                                        │
+│  GitHub: https://github.com/vijaymahes9080/Memory-Graph.git            │
 │  Author: Vijay Mahes (Vijaypradhap2004@gmail.com)                      │
 │                                                                        │
+│ SAFE MARGIN BOTTOM (100px)                                             │
 └────────────────────────────────────────────────────────────────────────┘
 ```
 
-### Visual & Copy Content
-- **Header**: `REAL APPLICATION CAPABILITIES`
-- **Sub-header**: `Engineered & Tested Feature Modules`
-- **Quad Feature Cards**:
-  - `🔍 RAG Subgraph Assistant`: Answers complex questions by traversing connected subgraphs.
-  - `⏱️ Evolution Timeline`: Time scrubber showing how ideas evolved over time.
-  - `⚡ Relationship Discovery`: Live feed of AI-discovered links and contradiction alerts.
-  - `📊 Graph Analytics`: Quantitative metrics on connectivity density and entity breakdown.
-- **Real Impact Statement**: `Designed to solve personal knowledge fragmentation by transforming static file storage into an AI-powered operating system for knowledge.`
-- **Author Details**: `Vijay Mahes (Vijaypradhap2004@gmail.com) | github.com/vijaymahes9080/Memory-Graph`
+---
+
+### Visual & Copy Elements
+
+- **Header Tag**: `REAL APPLICATION CAPABILITIES`
+- **Sub-headline**: `Engineered & Tested Feature Modules`
+- **Quad Interface Module Cards**:
+  - `🔍 RAG Subgraph Assistant`: Answers complex questions by traversing connected subgraphs and displaying citation badges.
+  - `⏱️ Evolution Timeline`: Interactive time scrubber animating node and edge emergence across dates.
+  - `⚡ Relationship Discovery Hub`: Live feed of AI-discovered implicit links, contradiction alerts, and knowledge gap advice.
+  - `📊 Graph Analytics`: Quantitative density metrics, link-to-node ratios, and entity distribution charts.
+- **Verified Impact Statement**:
+  `Designed to solve personal knowledge fragmentation by converting static document silos into a living, interconnected client-side memory graph.`
+- **Verified Project Links & Credentials**:
+  - **GitHub**: `https://github.com/vijaymahes9080/Memory-Graph.git`
+  - **Author**: Vijay Mahes (`Vijaypradhap2004@gmail.com`)
+
+---
+
+### Internal Selection Rationale
+*Selected because end users and technical recruiters want to see actual interface capabilities and verified repository links. Presenting the 4 core module views proves full completion across graph explorer, conversational search, temporal analysis, and analytics.*
+
+---
+
+## 🎨 DESIGN SYSTEM & LINKEDIN CAROUSEL RULES
+
+1. **Aspect Ratio & Dimensions**: Exactly **1200 × 1200 px** square aspect ratio optimized for desktop and mobile LinkedIn feeds.
+2. **Safe Padding Margins**: **100 px padding** on top and bottom boundaries to ensure no header or footer elements are clipped by LinkedIn mobile UI overlays.
+3. **Color Palette**:
+   - Background Canvas: Dark Navy `#0a0e1a` & Glass Surface `#151d33`
+   - Primary Accent: Indigo Glow `#6366f1` / `#818cf8`
+   - Secondary Accents: Cyan `#22d3ee`, Emerald `#34d399`, Pink `#f472b6`, Amber `#fb923c`
+   - Typography: Crisp White `#ffffff` and Muted Slate `#94a3b8`
+4. **Visual Consistency**: Unified glassmorphism card borders, consistent iconography (Lucide style), exact typography scale, and matching node coloring.

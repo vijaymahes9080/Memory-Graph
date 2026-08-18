@@ -1,216 +1,224 @@
-# 🧠 Memory Graph — AI Knowledge Infrastructure
+<p align="center">
+  <img src="docs/images/hero-banner.png" alt="Memory Graph — AI Knowledge Infrastructure" width="100%" />
+</p>
 
-> **Don't store information. Build relationships between it.**  
-> An AI-powered operating system for personal knowledge that continuously ingests files, code repositories, notes, and communications, extracts entity graphs, and discovers hidden relationships.
+<h1 align="center">🧠 Memory Graph</h1>
 
----
+<p align="center">
+  <strong>AI Knowledge Infrastructure — Don't store information. Build relationships between it.</strong>
+</p>
 
-<div align="center">
-
-![Memory Graph Header Banner](https://images.openai.com/static-rsc-4/WWqVjFtNaz2_TXNscmqDq0kNF59bxSZd_0-tCVhQwBdRuetWvocexzYYdtCLKfb6aTtdOF4WnzG3oPYgANso1IWDX7Wu5OrwPDY4ba9-CmuNoC3TJUdWdFVwOOxIvvK_IOSpsYR2Kwg6gShT9OC2N74JGJzpVJZSahlXkMh4DjoHv_EhuJ-trsK2mCFQYosq?purpose=fullsize)
-
-![Memory Graph Version](https://img.shields.io/badge/Memory--Graph-v2.4--AI--Core-3b82f6?style=for-the-badge&logo=react&logoColor=white)
-![Build Status](https://img.shields.io/badge/Build-Passing-10b981?style=for-the-badge&logo=github-actions&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-8b5cf6?style=for-the-badge)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.7-06b6d4?style=for-the-badge&logo=typescript&logoColor=white)
-
-</div>
-
----
-
-## 🌟 Core Concept: Everything Becomes Connected
-
-Traditional apps store information as isolated files. **Memory Graph** continuously extracts entities (People, Topics, Projects, Technologies, Concepts, Datasets, Dates) and connects them into a living memory network.
-
-```mermaid
-graph TD
-    User([USER]) --> PDF[PDF Document]
-    User --> Chat[Chat History]
-    User --> Email[Email Threads]
-    User --> Code[GitHub Code]
-    
-    PDF --> Ingest[AI Ingestion & Entity Extractor]
-    Chat --> Ingest
-    Email --> Ingest
-    Code --> Ingest
-    
-    Ingest --> Entities[Entities: People • Topics • Code • Concepts • Dates]
-    Entities --> Graph[Memory Knowledge Graph]
-    
-    Graph --> RAG[RAG AI Reasoning & Search Engine]
-    Graph --> Discovery[Automatic Relationship Discovery]
-    Graph --> Timeline[Temporal Knowledge Evolution Timeline]
-```
-
-<div align="center">
-
-![Connected Knowledge Architecture](https://images.openai.com/static-rsc-4/FC8LmkyELkqUehF9Jbc_Ey33LT-6yp6VOsFQBFcA56vioEiejsGiRjwk2GqBLhUQgwfBCoaICFtT_d8Q-E5zEZU2CmJFoBX0CM1drFI1Em_-BUPcqXaySuYUCG94KV7ZzwQILxk-TD_7uDOJvozpnECzp4jyCvBDTYkFGLy4tiF29IScVDxahN_StzW94bpu?purpose=fullsize)  
-*Figure 1: Multimodal Knowledge Memory Graph connecting PDFs, GitHub code repos, IoT emails, and research papers.*
-
-</div>
+<p align="center">
+  <img src="https://img.shields.io/badge/Version-2.4--AI--Core-6366f1?style=flat-square&logo=react&logoColor=white" alt="Version" />
+  <img src="https://img.shields.io/badge/Build-Passing-10b981?style=flat-square&logo=github-actions&logoColor=white" alt="Build" />
+  <img src="https://img.shields.io/badge/TypeScript-5.7-06b6d4?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/React-18.3-61dafb?style=flat-square&logo=react&logoColor=white" alt="React" />
+  <img src="https://img.shields.io/badge/License-MIT-8b5cf6?style=flat-square" alt="License" />
+  <img src="https://img.shields.io/badge/100%25-Client-34d399?style=flat-square" alt="Zero Backend" />
+</p>
 
 ---
 
-## 🔥 The Killer Feature: Automatic Relationship Discovery
+An AI-powered operating system for personal knowledge that continuously ingests files, code repositories, notes, and communications, extracts entity graphs, and **discovers hidden relationships** you never explicitly created.
 
-Memory Graph automatically discovers non-obvious relationships that the user never explicitly created.
+> **Zero external AI APIs. Zero backend servers.** Everything runs in your browser using TF-IDF, cosine similarity, and force-directed graph physics.
 
-<div align="center">
+---
 
-![Automatic Relationship Discovery Matrix](https://images.openai.com/static-rsc-4/eV71Y5PKDAC883DxQw0YeoweS2l8mPZKNN_gDh4tTBbLY8MCdPjPUIOZbLcF7BRs66-LISUAJeFW_IoDHTvxiuGK5UxtYDal32JS80tt-AhLZB2M5kzpAbyaJq-461RGl5k_pzjhXW9tDQw5nARt1_JljTPonLZCcPf42QGeIv08MlbqgrStAgmDLWk94DgP?purpose=fullsize)  
-*Figure 2: Automatic link discovery between PDF specification blueprints, PyTorch ML code modules, and research papers.*
+## The Vision: Everything Becomes Connected
 
-</div>
+Traditional apps store information as isolated files. Memory Graph continuously extracts **People, Topics, Projects, Technologies, Concepts, Datasets, and Dates**, then connects them into a living memory network.
 
-```
-                  ┌──────────────────────────────────────────────┐
-                  │    AI DISASTER COMMAND CENTER (PDF)          │
-                  │    • SAR Radar Flood Detection Spec          │
-                  └──────────────────────┬───────────────────────┘
-                                         │
-                        ⚡ AI Auto-Discovered: IMPLEMENTS
-                                         │
-                                         ▼
-                  ┌──────────────────────────────────────────────┐
-                  │    FLOOD-PREDICTION-ML (GitHub Repo)         │
-                  │    • PyTorch U-Net Model (flood_unet.py)     │
-                  │    • GeoTIFF Normalizer (satellite_module.py)│
-                  └──────────────────────┬───────────────────────┘
-                                         │
-                        ⚡ AI Auto-Discovered: EXTENDS
-                                         │
-                                         ▼
-                  ┌──────────────────────────────────────────────┐
-                  │    AGRICULTURE & CROP HYDROLOGY AI (PDF)     │
-                  │    • Soil moisture & crop yield prediction   │
-                  └──────────────────────────────────────────────┘
-```
+<p align="center">
+  <img src="docs/images/graph-preview.png" alt="Interactive Graph Explorer with force-directed canvas" width="100%" />
+</p>
+
+<p align="center"><em>Figure 1 — The Graph Explorer: 11 nodes, 11 edges, real-time physics simulation at 200+ FPS</em></p>
+
+---
+
+## The Killer Feature: Automatic Relationship Discovery
+
+Memory Graph uses **TF-IDF vector embeddings** and **cosine similarity** to automatically discover non-obvious relationships between your documents, code, emails, and notes — without you ever creating them.
+
+<p align="center">
+  <img src="docs/images/discovery-diagram.png" alt="Automatic Relationship Discovery between documents and code" width="100%" />
+</p>
+
+<p align="center"><em>Figure 2 — AI automatically discovers that a flood detection spec IMPLEMENTS the U-Net model, which EXTENDS crop hydrology research</em></p>
+
+### How It Works
+
+| Step | What Happens |
+|:-----|:-------------|
+| **1. Ingest** | Feed PDFs, GitHub repos, emails, chats, or notes into the system |
+| **2. Extract** | AI classifies entities and generates typed relationships |
+| **3. Embed** | Each node gets a TF-IDF frequency vector |
+| **4. Compare** | Cosine similarity scores every pair of nodes |
+| **5. Discover** | High-similarity pairs become new typed edges with confidence scores |
 
 ### Real-World Discovery Examples
-- 📄 **"This research paper is related to your code because it reuses the same Sentinel-1 satellite radar preprocessing script."**
-- 📧 **"This email thread contains the Copernicus API data quota required by your PyTorch U-Net model."**
-- 💬 **"This team chat decision from 6 months ago explains why PyTorch was chosen over TensorFlow."**
+
+> 📄 *"This research paper is related to your code because it reuses the same Sentinel-1 satellite radar preprocessing script."* — **94% confidence**
+
+> 📧 *"This email thread contains the Copernicus API data quota required by your PyTorch U-Net model."* — **87% confidence**
+
+> 💬 *"This team chat decision from 6 months ago explains why PyTorch was chosen over TensorFlow."* — **91% confidence**
 
 ---
 
-## 🎨 Four Complementary Interface Views
+## Four Powerful Interface Views
 
-| View | Purpose | Visual Highlights |
-| :--- | :--- | :--- |
-| **🕸️ Graph Explorer** | Interactive 2D/3D Force Graph | Physics repulsion loop, shortest pathfinder tool, node filtering by type, zoom/pan. |
-| **🔍 RAG AI Assistant** | Conversational Knowledge Query | Subgraph traversal, evidence node citations, confidence metrics, smart prompt chips. |
-| **⏱️ Evolution Timeline** | Temporal Knowledge Scrubbing | Scrub through dates (Sep 2025 – Feb 2026), watch knowledge nodes emerge sequentially. |
-| **⚡ Relationship Hub** | AI Discovered Links & Insights | Discovered links feed with AI reasoning, contradiction detector, and knowledge gap advice. |
+<p align="center">
+  <img src="docs/images/feature-cards.png" alt="Four interface views: Graph Explorer, RAG Assistant, Timeline, Auto Discovery" width="100%" />
+</p>
 
-<div align="center">
+<p align="center"><em>Figure 3 — Each view reveals a different dimension of your knowledge graph</em></p>
 
-![Interactive Physics Graph Explorer](https://images.openai.com/static-rsc-4/TZfpQVP1WPyxHNGJZAay3bDYeaxzTN_b9Vqxs3I-nEYvvyUvZll4IzfUmipzJyEKfWemM6FD8o3t7Il6P1L4u3vv6v88oeHtstql5WOL5tfAu-KtjKCz-LdIc3cfBbpsE9udQQrAaD6n0lusb2oVpo2pDa11zx9MMfWlQN_UiowDm5p2lDEn_CIjrrGjBKiV?purpose=fullsize)  
-*Figure 3: Interactive Force-Directed Canvas Graph Explorer with shortest pathfinder.*
-
-</div>
-
-<div align="center">
-
-![RAG AI Assistant & Reality Search Engine](https://images.openai.com/static-rsc-4/9I45Bb0vsWteHYsr3lOa046Jj0s7VSevDbah0Wcjx_XpjTu7m6V7GWItHnSbfn6yQ3Fc_d2MwEvzR8ePnLxATk7Gl2qnf9HHP3KcNqzmlRwATnrhwBahyngWMARfOzcmIL42v8y8-FQ1r1JFZrHJyihLPSq8i5I1dsrc_uu3Hw9z7YIqBtayo1JnPMhKfO5U?purpose=fullsize)  
-*Figure 4: RAG Subgraph Traversal Assistant generating connected narrative answers with evidence citations.*
-
-</div>
+| View | Purpose | What Makes It Special |
+|:-----|:--------|:----------------------|
+| **🕸️ Graph Explorer** | Interactive 2D Force Graph | Physics simulation, shortest pathfinder, node filtering, zoom/pan |
+| **🔍 RAG AI Assistant** | Conversational Knowledge Query | Subgraph traversal, evidence citations, confidence scores |
+| **⏱️ Evolution Timeline** | Temporal Knowledge Scrubbing | Scrub through dates (Sep 2025 – Feb 2026), watch nodes emerge |
+| **⚡ Relationship Hub** | AI Discovered Links & Insights | Auto-discovery feed, contradiction detector, knowledge gap advice |
 
 ---
 
-## 🏗️ Architecture & Multimodal Pipeline
+## Multimodal AI Pipeline
+
+From raw documents to intelligent knowledge graphs — all processed client-side in your browser.
+
+<p align="center">
+  <img src="docs/images/architecture-pipeline.png" alt="Six-stage AI pipeline architecture" width="100%" />
+</p>
+
+<p align="center"><em>Figure 4 — Six-stage pipeline: Ingest → Parse → Embed → Graph → Discover → Query</em></p>
+
+### System Architecture
 
 ```
-                               ┌────────────────────────────────┐
-                               │     USER INGESTION INTERFACE   │
-                               │  PDF • Chat • Email • GitHub   │
-                               │  Video • Notes • Web Documents │
-                               └───────────────┬────────────────┘
-                                               │
-                                               ▼
-                               ┌────────────────────────────────┐
-                               │  MULTIMODAL PARSER & CLEANER  │
-                               └───────────────┬────────────────┘
-                                               │
-                                               ▼
-                               ┌────────────────────────────────┐
-                               │   AI ENTITY & CONCEPT EXTRACTOR │
-                               │  Topics, Tech, Projects, Dates │
-                               └───────────────┬────────────────┘
-                                               │
-                                               ▼
-                      ┌────────────────────────┴────────────────────────┐
-                      ▼                                                 ▼
-        ┌───────────────────────────┐                     ┌───────────────────────────┐
-        │   VECTOR EMBEDDING INDEX  │                     │   GRAPH DATABASE STORE    │
-        │ TF-IDF / Cosine Similarity│                     │   Nodes & Typed Edges     │
-        └─────────────┬─────────────┘                     └─────────────┬─────────────┘
-                      │                                                 │
-                      └────────────────────────┬────────────────────────┘
-                                               │
-                                               ▼
-                               ┌────────────────────────────────┐
-                               │  AUTO-RELATIONSHIP DISCOVERY   │
-                               │   Implicit Link Discovery Engine│
-                               └────────────────────────────────┘
+                          ┌─────────────────────────────────┐
+                          │      USER INGESTION INTERFACE    │
+                          │  PDF · Chat · Email · GitHub     │
+                          │  Video · Notes · Web Documents   │
+                          └───────────────┬─────────────────┘
+                                          │
+                                          ▼
+                          ┌─────────────────────────────────┐
+                          │   MULTIMODAL PARSER & CLEANER    │
+                          └───────────────┬─────────────────┘
+                                          │
+                                          ▼
+                          ┌─────────────────────────────────┐
+                          │  AI ENTITY & CONCEPT EXTRACTOR   │
+                          │  Topics, Tech, Projects, Dates   │
+                          └───────────────┬─────────────────┘
+                                          │
+                         ┌────────────────┴────────────────┐
+                         ▼                                 ▼
+          ┌─────────────────────┐            ┌─────────────────────┐
+          │  VECTOR EMBEDDING   │            │   GRAPH DATABASE    │
+          │  TF-IDF + Cosine    │            │   Nodes & Edges     │
+          └─────────┬───────────┘            └─────────┬───────────┘
+                    └──────────────┬───────────────────┘
+                                   │
+                                   ▼
+                          ┌─────────────────────────────────┐
+                          │  AUTO-RELATIONSHIP DISCOVERY     │
+                          │  Implicit Link Discovery Engine  │
+                          └─────────────────────────────────┘
 ```
 
-<div align="center">
+### Data Model
 
-![Temporal Knowledge Timeline](https://images.openai.com/static-rsc-4/EooHwKH3t1t5X2LlXCaS3Prbl-IxpCet27s_e5ZXAXLHaaRe1Q4wamrFFU5cdV55dy3XnfYhk6e3XJ7Sge-H_-h0Fk9mlUivCHk8Z3k2Z9H7iOTsxmQw6zX15NQybj66EFw5m9CSjPKL5WKwKjwfxtHvz4txow87yElDdE0HfS1Ezu5haxEVDWNsr9XjSt2Y?purpose=fullsize)  
-*Figure 5: Temporal Memory Scrubbing view displaying knowledge evolution over time.*
-
-</div>
+| Category | Count | Examples |
+|:---------|:------|:---------|
+| **Entity Types** | 11 | PROJECT, DOCUMENT, CODE, EMAIL, CHAT, CONCEPT, TECHNOLOGY, PERSON, DATASET, NOTE, VIDEO |
+| **Relation Types** | 11 | RELATED_TO, IMPLEMENTS, DEPENDS_ON, SAME_TOPIC, EXTENDS, DERIVED_FROM, ... |
+| **Source Types** | 8 | PDF, DOCX, GITHUB, EMAIL, CHAT, VIDEO, NOTE, WEB |
+| **Pre-loaded Nodes** | 11 | Disaster management / flood prediction domain |
+| **Pre-loaded Edges** | 11 | Including 3 AI-discovered relationships |
 
 ---
 
-## 🚀 Quickstart Guide
+## Built With Modern Technology
 
-### Prerequisites
-- **Node.js** (v18.0 or higher)
-- **npm** (v9.0 or higher)
+<p align="center">
+  <img src="docs/images/tech-stack.png" alt="Technology stack: React, TypeScript, Vite, TailwindCSS, Canvas API, TF-IDF" width="100%" />
+</p>
 
-### Setup & Run Locally
+<p align="center"><em>Figure 5 — Six core technologies powering Memory Graph</em></p>
+
+| Layer | Technology | Why |
+|:------|:-----------|:----|
+| **Framework** | React 18.3 + TypeScript 5.7 | Type-safe component architecture |
+| **Build** | Vite 6.1 | Instant HMR, blazing fast builds |
+| **Styling** | TailwindCSS 3.4 | Custom glassmorphism dark theme |
+| **Canvas** | HTML5 Canvas 2D | Force-directed graph, vector projection |
+| **AI Engine** | TF-IDF + Cosine Similarity | Zero external API dependencies |
+| **Physics** | Coulomb Repulsion + Hooke Springs | Real-time graph layout simulation |
+
+---
+
+## Get Started in Seconds
+
+<p align="center">
+  <img src="docs/images/quickstart.png" alt="Four steps to get started" width="100%" />
+</p>
+
+<p align="center"><em>Figure 6 — Four commands from clone to running application</em></p>
 
 ```bash
-# 1. Clone the repository
+# Clone
 git clone https://github.com/vijaymahes9080/Memory-Graph.git
 cd Memory-Graph
 
-# 2. Install dependencies
+# Install & Run
 npm install
-
-# 3. Start local development server
 npm run dev
 
-# 4. Build production bundle
-npm run build
+# Open http://localhost:3000
 ```
 
-Open `http://localhost:3000` in your browser.
+**Prerequisites:** Node.js v18+ · npm v9+ · Modern browser
 
 ---
 
-## 🧪 Comprehensive Feature Modules
+## Feature Modules
 
-- **Voice Memory Engine**: Speech-to-text transcript processing and audio entity extraction.
-- **Taxonomy MindMap View**: Structured domain tree view organizing entities by type.
-- **Graph Analytics Dashboard**: Density metrics, automated link ratios, and type distribution charts.
-- **Visual Pattern Query Builder**: Construct visual pattern match queries `(Doc) -[IMPLEMENTS]-> (Code)`.
-- **Vector Space 2D Projection**: t-SNE / PCA style visual dimensional projection of text embeddings.
-- **Multi-Format Exporter**: Export memory graph to JSON, Cypher (Neo4j), and Obsidian Markdown Vault.
-- **Graph Time Machine**: Capture, label, and compare historical graph snapshots.
-
----
-
-## 📄 License
-
-Distributed under the **MIT License** — see [LICENSE](LICENSE) for full details.
+| Module | Description |
+|:-------|:------------|
+| **Voice Memory Engine** | Speech-to-text transcript processing with entity extraction |
+| **Taxonomy MindMap** | Hierarchical tree view organizing entities by type |
+| **Graph Analytics Dashboard** | Connectivity metrics, link ratios, type distribution charts |
+| **Visual Pattern Query Builder** | Construct `(Doc) -[IMPLEMENTS]-> (Code)` pattern queries |
+| **Vector Space Projection** | 2D t-SNE/PCA-style semantic embedding visualization |
+| **Multi-Format Exporter** | Export to JSON, Neo4j Cypher, and Obsidian Markdown Vault |
+| **Graph Time Machine** | Capture, label, and compare historical graph snapshots |
+| **Contradiction Detector** | Find conflicting information across documents |
+| **Knowledge Gap Advisor** | Identify missing connections and recommend actions |
 
 ---
 
-## 👤 Author & Maintainer
+## Testing
 
-**Vijay Mahes**  
-- Email: [Vijaypradhap2004@gmail.com](mailto:Vijaypradhap2004@gmail.com)  
-- GitHub: [@vijaymahes9080](https://github.com/vijaymahes9080)
+```bash
+npm run test
+```
+
+Tests cover core algorithms: data loading, BFS shortest path, document ingestion with auto-discovery, and RAG query traversal.
+
+---
+
+## License
+
+Distributed under the **MIT License** — see [LICENSE](LICENSE) for details.
+
+---
+
+## Author
+
+**Vijay Mahes**
+
+- [![Email](https://img.shields.io/badge/Email-Vijaypradhap2004@gmail.com-e2e8f0?style=flat-square&logo=gmail&logoColor=white)](mailto:Vijaypradhap2004@gmail.com)
+- [![GitHub](https://img.shields.io/badge/GitHub-@vijaymahes9080-e2e8f0?style=flat-square&logo=github&logoColor=white)](https://github.com/vijaymahes9080)
