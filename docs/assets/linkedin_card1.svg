@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200">
+  <rect width="1200" height="1200" fill="#030712"/>
+  
+  <!-- Outer Frame & Glass Panel -->
+  <rect x="50" y="50" width="1100" height="1100" rx="36" fill="#0f172a" fill-opacity="0.9" stroke="#3b82f6" stroke-opacity="0.3" stroke-width="2"/>
+  
+  <!-- Header -->
+  <text x="100" y="140" font-family="Inter, sans-serif" font-size="48" font-weight="800" fill="#ffffff">MEMORY GRAPH</text>
+  <text x="100" y="185" font-family="JetBrains Mono, monospace" font-size="22" font-weight="600" fill="#06b6d4">AI Knowledge Infrastructure Platform</text>
+  
+  <rect x="920" y="110" width="180" height="44" rx="22" fill="#8b5cf6" fill-opacity="0.2" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="1010" y="138" font-family="JetBrains Mono, monospace" font-size="16" font-weight="700" fill="#c084fc" text-anchor="middle">v2.4 AI Core</text>
+  
+  <line x1="100" y1="220" x2="1100" y2="220" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- Node Visual Network -->
+  <rect x="100" y="260" width="1000" height="600" rx="28" fill="#020617" stroke="#1e293b" stroke-width="2"/>
+  
+  <!-- Edges -->
+  <line x1="250" y1="420" x2="600" y2="560" stroke="#ec4899" stroke-width="3" stroke-dasharray="8,8"/>
+  <line x1="600" y1="560" x2="950" y2="420" stroke="#3b82f6" stroke-width="3"/>
+  <line x1="600" y1="560" x2="600" y2="720" stroke="#8b5cf6" stroke-width="3"/>
+
+  <!-- Node 1: PDF -->
+  <rect x="150" y="360" width="300" height="120" rx="18" fill="#1e1b4b" stroke="#6366f1" stroke-width="2"/>
+  <text x="180" y="395" font-family="JetBrains Mono, monospace" font-size="14" font-weight="700" fill="#a5b4fc">DOCUMENT (PDF)</text>
+  <text x="180" y="430" font-family="Inter, sans-serif" font-size="18" font-weight="700" fill="#ffffff">AI Disaster Command Center.pdf</text>
+  <text x="180" y="455" font-family="Inter, sans-serif" font-size="14" fill="#94a3b8">SAR Radar Flood Segmentation Spec</text>
+
+  <!-- Node 2: Center Hub -->
+  <rect x="420" y="500" width="360" height="140" rx="24" fill="#1e3a8a" fill-opacity="0.9" stroke="#60a5fa" stroke-width="3"/>
+  <text x="450" y="540" font-family="JetBrains Mono, monospace" font-size="16" font-weight="700" fill="#93c5fd">PROJECT HUB</text>
+  <text x="450" y="575" font-family="Inter, sans-serif" font-size="24" font-weight="800" fill="#ffffff">Disaster Management Platform</text>
+  <text x="450" y="605" font-family="Inter, sans-serif" font-size="15" fill="#cbd5e1">Tying code, sensors &amp; research papers</text>
+
+  <!-- Node 3: Code Repo -->
+  <rect x="750" y="360" width="300" height="120" rx="18" fill="#064e3b" stroke="#10b981" stroke-width="2"/>
+  <text x="780" y="395" font-family="JetBrains Mono, monospace" font-size="14" font-weight="700" fill="#6ee7b7">CODE REPO (GITHUB)</text>
+  <text x="780" y="430" font-family="Inter, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Flood-Prediction-ML</text>
+  <text x="780" y="455" font-family="Inter, sans-serif" font-size="14" fill="#94a3b8">PyTorch U-Net Model (flood_unet.py)</text>
+
+  <!-- AI Reasoning Callout -->
+  <rect x="250" y="770" width="700" height="54" rx="14" fill="#831843" fill-opacity="0.4" stroke="#ec4899" stroke-width="1.5"/>
+  <text x="600" y="803" font-family="Inter, sans-serif" font-size="17" font-weight="600" fill="#f472b6" text-anchor="middle">⚡ AI Auto-Discovered: Code module satellite_module.py implements PDF algorithm</text>
+
+  <!-- Bottom Strip -->
+  <rect x="100" y="900" width="230" height="60" rx="14" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="215" y="936" font-family="Inter, sans-serif" font-size="15" font-weight="700" fill="#22d3ee" text-anchor="middle">⚡ Auto Discovery</text>
+
+  <rect x="355" y="900" width="230" height="60" rx="14" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="470" y="936" font-family="Inter, sans-serif" font-size="15" font-weight="700" fill="#c084fc" text-anchor="middle">🔍 Subgraph RAG</text>
+
+  <rect x="610" y="900" width="230" height="60" rx="14" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="725" y="936" font-family="Inter, sans-serif" font-size="15" font-weight="700" fill="#f472b6" text-anchor="middle">⏱️ Time Machine</text>
+
+  <rect x="865" y="900" width="235" height="60" rx="14" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="982" y="936" font-family="Inter, sans-serif" font-size="15" font-weight="700" fill="#34d399" text-anchor="middle">🕸️ Force Graph</text>
+
+  <!-- Tech Footer -->
+  <line x1="100" y1="1000" x2="1100" y2="1000" stroke="#1e293b" stroke-width="1"/>
+  <text x="100" y="1040" font-family="JetBrains Mono, monospace" font-size="16" fill="#64748b">Tech Stack: React 18 • TypeScript 5.7 • Vite 6 • TailwindCSS • Canvas API</text>
+  <text x="1100" y="1040" font-family="JetBrains Mono, monospace" font-size="16" fill="#3b82f6" text-anchor="end">github.com/vijaymahes9080/Memory-Graph</text>
+</svg>

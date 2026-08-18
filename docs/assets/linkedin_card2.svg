@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200">
+  <rect width="1200" height="1200" fill="#030712"/>
+  <rect x="50" y="50" width="1100" height="1100" rx="36" fill="#0f172a" fill-opacity="0.9" stroke="#8b5cf6" stroke-opacity="0.3" stroke-width="2"/>
+  
+  <text x="100" y="140" font-family="Inter, sans-serif" font-size="44" font-weight="800" fill="#ffffff">SYSTEM ARCHITECTURE &amp; PIPELINE</text>
+  <text x="100" y="185" font-family="JetBrains Mono, monospace" font-size="22" font-weight="600" fill="#8b5cf6">Verified Data Flow &amp; AI Processing Engine</text>
+  <line x1="100" y1="220" x2="1100" y2="220" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- Pipeline Boxes -->
+  <!-- Step 1 -->
+  <rect x="100" y="270" width="1000" height="90" rx="18" fill="#020617" stroke="#3b82f6" stroke-width="2"/>
+  <text x="140" y="325" font-family="JetBrains Mono, monospace" font-size="20" font-weight="800" fill="#60a5fa">1. INGESTION</text>
+  <text x="400" y="325" font-family="Inter, sans-serif" font-size="18" fill="#cbd5e1">PDF • DOCX • GitHub Repos • Emails • Chat Transcripts • Audio</text>
+
+  <!-- Step 2 -->
+  <rect x="100" y="390" width="1000" height="90" rx="18" fill="#020617" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="140" y="445" font-family="JetBrains Mono, monospace" font-size="20" font-weight="800" fill="#c084fc">2. EXTRACTION</text>
+  <text x="400" y="445" font-family="Inter, sans-serif" font-size="18" fill="#cbd5e1">AI Entity Recognizer &amp; Multimodal Text Tokenizer</text>
+
+  <!-- Step 3 -->
+  <rect x="100" y="510" width="1000" height="90" rx="18" fill="#020617" stroke="#06b6d4" stroke-width="2"/>
+  <text x="140" y="565" font-family="JetBrains Mono, monospace" font-size="20" font-weight="800" fill="#22d3ee">3. VECTOR INDEX</text>
+  <text x="400" y="565" font-family="Inter, sans-serif" font-size="18" fill="#cbd5e1">TF-IDF Embeddings &amp; Cosine Distance Matrix Calculation</text>
+
+  <!-- Step 4 -->
+  <rect x="100" y="630" width="1000" height="90" rx="18" fill="#020617" stroke="#ec4899" stroke-width="2"/>
+  <text x="140" y="685" font-family="JetBrains Mono, monospace" font-size="20" font-weight="800" fill="#f472b6">4. DISCOVERY</text>
+  <text x="400" y="685" font-family="Inter, sans-serif" font-size="18" fill="#cbd5e1">Auto-Generates Typed Edges (IMPLEMENTS / SAME_TOPIC / EXTENDS)</text>
+
+  <!-- Step 5 -->
+  <rect x="100" y="750" width="1000" height="90" rx="18" fill="#020617" stroke="#10b981" stroke-width="2"/>
+  <text x="140" y="805" font-family="JetBrains Mono, monospace" font-size="20" font-weight="800" fill="#34d399">5. VIEWS</text>
+  <text x="400" y="805" font-family="Inter, sans-serif" font-size="18" fill="#cbd5e1">Canvas Physics Graph • RAG AI Search • Evolution Timeline • Insights Hub</text>
+
+  <!-- Verified Technical Capabilities Grid -->
+  <rect x="100" y="890" width="1000" height="150" rx="22" fill="#0f172a" stroke="#1e293b" stroke-width="2"/>
+  <text x="130" y="930" font-family="JetBrains Mono, monospace" font-size="16" font-weight="800" fill="#94a3b8">VERIFIED TECHNICAL CAPABILITIES</text>
+
+  <text x="130" y="975" font-family="Inter, sans-serif" font-size="18" font-weight="700" fill="#ffffff">✔ Zero-Dependency Vector Search</text>
+  <text x="130" y="1010" font-family="Inter, sans-serif" font-size="15" fill="#94a3b8">In-browser cosine distance calculation</text>
+
+  <text x="600" y="975" font-family="Inter, sans-serif" font-size="18" font-weight="700" fill="#ffffff">✔ BFS Shortest Pathfinder</text>
+  <text x="600" y="1010" font-family="Inter, sans-serif" font-size="15" fill="#94a3b8">Multi-hop traversal algorithm</text>
+
+  <!-- Footer -->
+  <line x1="100" y1="1070" x2="1100" y2="1070" stroke="#1e293b" stroke-width="1"/>
+  <text x="100" y="1110" font-family="JetBrains Mono, monospace" font-size="16" fill="#64748b">Verified Architecture • src/services/memoryEngine.ts</text>
+  <text x="1100" y="1110" font-family="JetBrains Mono, monospace" font-size="16" fill="#8b5cf6" text-anchor="end">github.com/vijaymahes9080/Memory-Graph</text>
+</svg>

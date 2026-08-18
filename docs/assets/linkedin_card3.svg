@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200">
+  <rect width="1200" height="1200" fill="#030712"/>
+  <rect x="50" y="50" width="1100" height="1100" rx="36" fill="#0f172a" fill-opacity="0.9" stroke="#ec4899" stroke-opacity="0.3" stroke-width="2"/>
+  
+  <text x="100" y="140" font-family="Inter, sans-serif" font-size="44" font-weight="800" fill="#ffffff">REAL PRODUCT CAPABILITIES &amp; IMPACT</text>
+  <text x="100" y="185" font-family="JetBrains Mono, monospace" font-size="22" font-weight="600" fill="#ec4899">Engineered &amp; Verified Feature Modules</text>
+  <line x1="100" y1="220" x2="1100" y2="220" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- Quad Feature Grid -->
+  <!-- Card 1 -->
+  <rect x="100" y="260" width="480" height="280" rx="22" fill="#020617" stroke="#3b82f6" stroke-width="2"/>
+  <text x="130" y="310" font-family="Inter, sans-serif" font-size="22" font-weight="800" fill="#60a5fa">🔍 RAG Subgraph Assistant</text>
+  <text x="130" y="350" font-family="Inter, sans-serif" font-size="16" fill="#cbd5e1">Conversational query engine that answers complex questions by traversing connected subgraphs with inline evidence citations.</text>
+
+  <!-- Card 2 -->
+  <rect x="620" y="260" width="480" height="280" rx="22" fill="#020617" stroke="#06b6d4" stroke-width="2"/>
+  <text x="650" y="310" font-family="Inter, sans-serif" font-size="22" font-weight="800" fill="#22d3ee">⏱️ Evolution Timeline</text>
+  <text x="650" y="350" font-family="Inter, sans-serif" font-size="16" fill="#cbd5e1">Interactive time scrubber with play/pause animations showing how ideas evolved into code repos and papers over time.</text>
+
+  <!-- Card 3 -->
+  <rect x="100" y="570" width="480" height="280" rx="22" fill="#020617" stroke="#ec4899" stroke-width="2"/>
+  <text x="130" y="620" font-family="Inter, sans-serif" font-size="22" font-weight="800" fill="#f472b6">⚡ Relationship Discovery</text>
+  <text x="130" y="660" font-family="Inter, sans-serif" font-size="16" fill="#cbd5e1">Live feed of AI auto-discovered links with confidence scores, contradiction alerts, and knowledge gap advice.</text>
+
+  <!-- Card 4 -->
+  <rect x="620" y="570" width="480" height="280" rx="22" fill="#020617" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="650" y="620" font-family="Inter, sans-serif" font-size="22" font-weight="800" fill="#c084fc">📊 Graph Analytics</text>
+  <text x="650" y="660" font-family="Inter, sans-serif" font-size="16" fill="#cbd5e1">Quantitative analytics metrics on connectivity density, automated link ratios, and functional entity type breakdowns.</text>
+
+  <!-- Impact Statement -->
+  <rect x="100" y="880" width="1000" height="150" rx="22" fill="#0f172a" stroke="#1e293b" stroke-width="2"/>
+  <text x="130" y="925" font-family="JetBrains Mono, monospace" font-size="16" font-weight="800" fill="#f472b6">REAL IMPACT STATEMENT</text>
+  <text x="130" y="965" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="#ffffff">Designed to solve personal knowledge fragmentation by transforming static</text>
+  <text x="130" y="995" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="#ffffff">file storage into an AI-powered operating system for knowledge.</text>
+
+  <!-- Footer -->
+  <line x1="100" y1="1060" x2="1100" y2="1060" stroke="#1e293b" stroke-width="1"/>
+  <text x="100" y="1095" font-family="JetBrains Mono, monospace" font-size="16" fill="#64748b">Author: Vijay Mahes (Vijaypradhap2004@gmail.com)</text>
+  <text x="1100" y="1095" font-family="JetBrains Mono, monospace" font-size="16" fill="#ec4899" text-anchor="end">github.com/vijaymahes9080/Memory-Graph</text>
+</svg>
